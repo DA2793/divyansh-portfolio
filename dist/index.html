@@ -2,14 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./vite.svg" />
+    <link rel="icon" href="/DA-logo.png" /> <!-- We'll create a custom favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divyansh Portfolio</title>
-    <script type="module" crossorigin src="./assets/index-5d3f5f25.js"></script>
-    <link rel="stylesheet" href="./assets/index-0f7de4aa.css">
+    
+    <!-- SEO Meta Tags -->
+    <title>Divyansh Ahuja - Supply Chain Operations Manager</title>
+    <meta name="description" content="Divyansh Ahuja - Supply Chain Operations Manager with 9+ years of experience in supply chain management, logistics, and customer service." />
+    <meta name="keywords" content="Divyansh Ahuja, Supply Chain, Operations Manager, Project Management, Amazon, Process Automation" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Divyansh Ahuja - Supply Chain Operations Manager" />
+    <meta property="og:description" content="Supply Chain Operations Manager with expertise in process automation and team leadership." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Font Awesome -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- Google Fonts -->
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Loading Animation */
+      .loading-animation {
+        width: 40px;
+        height: 40px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
-    
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
