@@ -16,7 +16,7 @@ const Contact = () => {
                 href="tel:+91-7995028078"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
-                **************
+                +91-7995028078
               </a>
             </div>
 

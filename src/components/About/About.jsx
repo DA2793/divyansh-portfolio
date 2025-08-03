@@ -5,7 +5,7 @@ const About = () => {
         <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-gray-600 leading-relaxed mb-6">
-            Results-driven Supply Chain Operations Manager with 9+ years of experience in supply chain
+            Results-driven Supply Chain Operations Manager with 10 years of experience in supply chain
             management, logistics, and customer service. Proven track record in driving operational 
             excellence, automating processes, and fostering cross-functional collaboration.
           </p>

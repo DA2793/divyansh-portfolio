@@ -39,7 +39,7 @@ const Hero = () => {
 
             {/* Professional Summary */}
             <p className="text-gray-600 max-w-2xl mx-auto mb-8 px-4">
-              9+ years of experience in supply chain management, logistics, and customer service. 
+              10 years of experience in supply chain management, logistics, and customer service. 
               Specialized in operational excellence, process automation, and team leadership.
             </p>
 

@@ -5,8 +5,8 @@ const Navbar = () => {
       <div className="bg-gray-50 border-b">
         <div className="container mx-auto px-4 py-2">
           <div className="flex justify-end space-x-6 text-sm text-gray-600">
-            <a href="tel:**************" className="hover:text-blue-600">
-              <i className="fas fa-phone mr-2"></i>**************
+            <a href="tel:+91-7995028078" className="hover:text-blue-600">
+              <i className="fas fa-phone mr-2"></i>+91-7995028078
             </a>
             <a href="mailto:da.2793@yahoo.com" className="hover:text-blue-600">
               <i className="fas fa-envelope mr-2"></i>da.2793@yahoo.com
