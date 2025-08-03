@@ -4,7 +4,10 @@ const Hero = () => {
   const [imageError, setImageError] = useState(false);
 
   return (
-    <section id="home" className="min-h-[70vh] flex items-center justify-center px-4 bg-gradient-to-br from-blue-50 to-white pt-20">
+    <section
+      id="home"
+      className="min-h-[70vh] flex items-center justify-center px-4 bg-gradient-to-br from-blue-50 to-white pt-20"
+    >
       <div className="container mx-auto">
         <div className="text-center">
           {/* Profile Image and CV Download */}
@@ -12,13 +15,14 @@ const Hero = () => {
             <div className="relative inline-block">
               {!imageError ? (
                 <img
-                  src="profile-pic.jpg"
+                  src="/profile-pic.jpg"  // Make sure this matches exactly with your file name
                   alt="Divyansh Ahuja"
                   className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
                   onError={(e) => {
                     console.error('Image failed to load:', e);
                     setImageError(true);
                   }}
+                  loading="eager"  // Added for priority loading
                 />
               ) : (
                 <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center">
@@ -27,7 +31,7 @@ const Hero = () => {
               )}
               <div className="absolute -bottom-2 -right-2">
                 <a
-                  href="Divyansh_Ahuja_CV.pdf"
+                  href="/Divyansh_Ahuja_CV.pdf"
                   download
                   className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:scale-110 transform duration-200"
                   title="Download CV"
@@ -49,31 +53,31 @@ const Hero = () => {
 
             {/* Professional Summary */}
             <p className="text-gray-600 max-w-2xl mx-auto mb-8 px-4">
-              10 years of experience in supply chain management, logistics, and customer service. 
+              10 years of experience in supply chain management, logistics, and customer service.
               Specialized in operational excellence, process automation, and team leadership.
             </p>
 
             {/* Social Links */}
             <div className="flex justify-center gap-8 mb-8">
-              <a 
-                href="https://linkedin.com/in/divyanshahuja" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com/in/divyanshahuja"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-200"
                 aria-label="LinkedIn Profile"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a 
+              <a
                 href="mailto:da.2793@yahoo.com"
                 className="text-2xl text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-200"
                 aria-label="Email"
               >
                 <i className="fas fa-envelope"></i>
               </a>
-              <a 
-                href="https://bold.pro/my/divyanshahuja" 
-                target="_blank" 
+              <a
+                href="https://bold.pro/my/divyanshahuja"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-200"
                 aria-label="Portfolio Website"
