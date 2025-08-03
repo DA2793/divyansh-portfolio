@@ -1,6 +1,10 @@
 {
   "name": "divyansh-portfolio",
   "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
