@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 const Hero = () => {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <section id="home" className="min-h-[70vh] flex items-center justify-center px-4 bg-gradient-to-br from-blue-50 to-white pt-20">
       <div className="container mx-auto">
@@ -6,20 +10,25 @@ const Hero = () => {
           {/* Profile Image and CV Download */}
           <div className="mb-8 flex justify-center">
             <div className="relative inline-block">
-              <img
-  src="/profile-pic.jpg"
-  alt="Divyansh Ahuja"
-  className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
-  onError={(e) => {
-    console.log('Image failed to load');
-    e.target.onerror = null;
-    e.target.src = 'https://via.placeholder.com/150';
-  }}
-/>
+              {!imageError ? (
+                <img
+                  src="profile-pic.jpg"
+                  alt="Divyansh Ahuja"
+                  className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    console.error('Image failed to load:', e);
+                    setImageError(true);
+                  }}
+                />
+              ) : (
+                <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-500 text-2xl font-bold">DA</span>
+                </div>
+              )}
               <div className="absolute -bottom-2 -right-2">
                 <a
-                  href="Divyansh_Ahuja_CV.pdf"  // Make sure this file is in public folder
-                  download="Divyansh_Ahuja_CV.pdf"
+                  href="Divyansh_Ahuja_CV.pdf"
+                  download
                   className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:scale-110 transform duration-200"
                   title="Download CV"
                 >
@@ -40,7 +49,7 @@ const Hero = () => {
 
             {/* Professional Summary */}
             <p className="text-gray-600 max-w-2xl mx-auto mb-8 px-4">
-              9+ years of experience in supply chain management, logistics, and customer service. 
+              10 years of experience in supply chain management, logistics, and customer service. 
               Specialized in operational excellence, process automation, and team leadership.
             </p>
 
