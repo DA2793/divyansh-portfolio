@@ -15,14 +15,13 @@ const Hero = () => {
             <div className="relative inline-block">
               {!imageError ? (
                 <img
-                  src="/profile-pic.jpg"  // Make sure this matches exactly with your file name
+                  src="/profile-pic.jpg"
                   alt="Divyansh Ahuja"
                   className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
                   onError={(e) => {
                     console.error('Image failed to load:', e);
                     setImageError(true);
                   }}
-                  loading="eager"  // Added for priority loading
                 />
               ) : (
                 <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center">
