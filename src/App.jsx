@@ -33,7 +33,7 @@ function App() {
               <div className="space-y-2">
                 <p className="text-gray-600">
                   <i className="fas fa-phone mr-2"></i>
-                  **************
+                  +91-7995028078
                 </p>
                 <p className="text-gray-600">
                   <i className="fas fa-envelope mr-2"></i>
