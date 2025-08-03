@@ -7,14 +7,15 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative inline-block">
               <img
-                src="profile-pic.jpg"  // Make sure this file is in public folder
-                alt="Divyansh Ahuja"
-                className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src = 'https://via.placeholder.com/150'; // Fallback image if profile pic fails to load
-                }}
-              />
+  src="/profile-pic.jpg"
+  alt="Divyansh Ahuja"
+  className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
+  onError={(e) => {
+    console.log('Image failed to load');
+    e.target.onerror = null;
+    e.target.src = 'https://via.placeholder.com/150';
+  }}
+/>
               <div className="absolute -bottom-2 -right-2">
                 <a
                   href="Divyansh_Ahuja_CV.pdf"  // Make sure this file is in public folder
