@@ -7,17 +7,17 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative inline-block">
               <img
-                src="/profile-pic.jpg"
+                src="profile-pic.jpg"  // Make sure this file is in public folder
                 alt="Divyansh Ahuja"
                 className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = 'https://via.placeholder.com/150';
+                  e.target.src = 'https://via.placeholder.com/150'; // Fallback image if profile pic fails to load
                 }}
               />
               <div className="absolute -bottom-2 -right-2">
                 <a
-                  href="/Divyansh_Ahuja_CV.pdf"
+                  href="Divyansh_Ahuja_CV.pdf"  // Make sure this file is in public folder
                   download="Divyansh_Ahuja_CV.pdf"
                   className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:scale-110 transform duration-200"
                   title="Download CV"
@@ -39,12 +39,12 @@ const Hero = () => {
 
             {/* Professional Summary */}
             <p className="text-gray-600 max-w-2xl mx-auto mb-8 px-4">
-              10 years of experience in supply chain management, logistics, and customer service. 
+              9+ years of experience in supply chain management, logistics, and customer service. 
               Specialized in operational excellence, process automation, and team leadership.
             </p>
 
             {/* Social Links */}
-            <div className="flex justify-center gap-8">
+            <div className="flex justify-center gap-8 mb-8">
               <a 
                 href="https://linkedin.com/in/divyanshahuja" 
                 target="_blank" 
@@ -73,7 +73,7 @@ const Hero = () => {
             </div>
 
             {/* Call to Action Buttons */}
-            <div className="mt-8 flex justify-center gap-4">
+            <div className="flex justify-center gap-4">
               <a
                 href="#contact"
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
