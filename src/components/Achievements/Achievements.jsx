@@ -63,6 +63,7 @@ const Achievements = () => {
               <div>
                 <h4 className="font-semibold mb-2">Manager of the Month - Amazon</h4>
                 <ul className="text-gray-600 space-y-1">
+                  <li>• Jun '25</li>
                   <li>• Jan '25</li>
                   <li>• Dec '24</li>
                   <li>• Sep '24</li>
