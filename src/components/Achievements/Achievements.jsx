@@ -61,7 +61,7 @@ const Achievements = () => {
                 <h4 className="font-semibold mb-2">
                   Manager of the Month – Amazon
                 </h4>
-                <p>Jun '25, Jan '25, Dec '24, Sep '24, Mar '24, Jan '23</p>
+                <p>Sep '25, Jun '25, Jan '25, Dec '24, Sep '24, Mar '24, Jan '23</p>
               </div>
 
               <div>
