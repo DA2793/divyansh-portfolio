@@ -1,75 +1,86 @@
 const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects Handled</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          
+      <div className="max-w-6xl mx-auto px-4">
+
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Key Projects & Impact
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
           {/* QuickSight Dashboard */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-600 mb-3">
-              QuickSight Dashboard Development
+              Centralized Dashboard & Reporting Automation
             </h3>
-            <p className="text-gray-600 mb-4">
-              Designed and implemented multiple centralized QuickSight dashboards, optimizing data 
-              extraction processes and achieving a 95% reduction in manual effort.
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong>Problem:</strong> High manual effort and fragmented reporting across teams.<br />
+              <strong>Action:</strong> Designed and implemented centralized QuickSight dashboards with automated data pipelines.<br />
+              <strong>Impact:</strong> Reduced manual effort by 95% and significantly improved data visibility and decision-making speed.
             </p>
           </div>
 
           {/* Cost Aware Scheduling */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-600 mb-3">
-              Cost Aware Reactive Scheduling
+              AI-Driven Cost Optimization (EU Network)
             </h3>
-            <p className="text-gray-600 mb-4">
-              Implemented AI-driven cost reduction in the European Middle Mile Transportation 
-              Network, optimizing surface transportation.
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong>Problem:</strong> High ad hoc transportation costs and inefficient scheduling decisions.<br />
+              <strong>Action:</strong> Implemented cost-aware, AI-driven scheduling strategies across the European Middle Mile network.<br />
+              <strong>Impact:</strong> Delivered €1.8M in cost savings while improving operational efficiency.
             </p>
           </div>
 
           {/* HawkEye Automation */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-600 mb-3">
-              Amazon ROC HawkEye Automation
+              Case Management Automation (HawkEye)
             </h3>
-            <p className="text-gray-600 mb-4">
-              Automated case management using Tampermonkey, reducing manual errors and delays by 90%.
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong>Problem:</strong> Manual case handling causing delays and inconsistencies.<br />
+              <strong>Action:</strong> Developed Tampermonkey-based automation for case management workflows.<br />
+              <strong>Impact:</strong> Reduced manual effort by 90% and improved turnaround time and accuracy.
             </p>
           </div>
 
-          {/* Commercial Carrier Automation */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          {/* Carrier Automation */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-600 mb-3">
-              Commercial Carrier Cancellation Automation
+              Carrier Cancellation Automation
             </h3>
-            <p className="text-gray-600 mb-4">
-              Automated 95% of carrier cancellations using a custom script, reducing manual effort 
-              and turnaround time.
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong>Problem:</strong> High manual intervention in carrier cancellations impacting efficiency.<br />
+              <strong>Action:</strong> Built automation scripts to streamline cancellation workflows.<br />
+              <strong>Impact:</strong> Automated 95% of cancellations, reducing turnaround time and manual workload.
             </p>
           </div>
 
-          {/* Cost and Disruption Reduction */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          {/* Cost & Disruption */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-600 mb-3">
-              Cost and Disruption Reduction
+              Network Disruption & Cost Reduction
             </h3>
-            <p className="text-gray-600 mb-4">
-              Conducted root cause analysis to reduce operational disruptions and collaborated with 
-              stakeholders for successful corrective actions.
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong>Problem:</strong> Frequent operational disruptions impacting cost and service levels.<br />
+              <strong>Action:</strong> Conducted root cause analysis and implemented corrective actions with stakeholders.<br />
+              <strong>Impact:</strong> Reduced disruptions and improved overall network efficiency and reliability.
             </p>
           </div>
 
-          {/* Employee Management System */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          {/* EMS */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-600 mb-3">
-              Employee Management System
+              Employee Performance Management System
             </h3>
-            <p className="text-gray-600 mb-4">
-              Implemented a standardized employee performance tracking system (EMS) that reduced 
-              evaluation inconsistencies by 30% through categorized behavioral/operational metrics 
-              and real-time dashboards.
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong>Problem:</strong> Inconsistent performance evaluation and lack of visibility.<br />
+              <strong>Action:</strong> Built a standardized SharePoint-based tracking system with structured metrics and dashboards.<br />
+              <strong>Impact:</strong> Improved evaluation consistency by 30% and enhanced performance transparency.
             </p>
           </div>
+
         </div>
       </div>
     </section>
