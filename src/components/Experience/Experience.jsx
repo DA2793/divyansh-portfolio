@@ -63,7 +63,7 @@ const Experience = () => {
             </div>
 
             <h4 className="text-blue-600 font-medium mb-4">
-              IEnergizer
+              IEnergizer (Credit One Bank – US Credit Card Issuer)
             </h4>
 
             {/* Key Impact */}
@@ -73,17 +73,19 @@ const Experience = () => {
               </h5>
               <ul className="text-gray-700 space-y-1">
                 <li>• Achieved 99%+ quality and 95%+ CSAT in high-risk operations</li>
-                <li>• Built and scaled fraud & credit protection programs</li>
+                <li>• Scaled fraud and credit protection operations with strong execution standards</li>
               </ul>
             </div>
 
             {/* Responsibilities */}
             <ul className="space-y-2 text-gray-600 text-sm leading-relaxed">
-              <li>• Managed high-severity escalation workflows and SLA adherence</li>
-              <li>• Designed SOPs and training programs for operational teams</li>
-              <li>• Built dashboards and reporting frameworks for performance tracking</li>
-              <li>• Led workforce planning and performance management initiatives</li>
-              <li>• Conducted root cause analysis and implemented process improvements</li>
+              <li>• Managed end-to-end service delivery across customer support, fraud risk, and credit protection operations</li>
+              <li>• Led fraud investigation and escalation management workflows for high-risk cases</li>
+              <li>• Improved performance visibility through structured reporting and dashboards</li>
+              <li>• Designed and implemented SOPs and reporting frameworks to standardize processes</li>
+              <li>• Collaborated with cross-functional stakeholders to resolve issues and improve outcomes</li>
+              <li>• Led workforce planning, training, and performance management initiatives</li>
+              <li>• Conducted root cause analysis to drive continuous improvement and operational stability</li>
             </ul>
 
           </div>
