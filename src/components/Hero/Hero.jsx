@@ -25,18 +25,6 @@ const Hero = () => {
                 <span className="text-gray-500 text-2xl font-bold">DA</span>
               </div>
             )}
-
-            {/* CV Download */}
-            <div className="absolute -bottom-2 -right-2">
-              <a
-                href="/Divyansh_Ahuja_CV.pdf"
-                download
-                className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition shadow-lg hover:scale-110"
-                title="Download CV"
-              >
-                <i className="fas fa-download text-lg"></i>
-              </a>
-            </div>
           </div>
         </div>
 
@@ -71,6 +59,7 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex justify-center gap-8 mb-8">
+
           {/* LinkedIn */}
           <a
             href="https://linkedin.com/in/divyanshahuja"
@@ -101,6 +90,7 @@ const Hero = () => {
           >
             <i className="fas fa-envelope"></i>
           </a>
+
         </div>
 
         {/* CTA Buttons */}
