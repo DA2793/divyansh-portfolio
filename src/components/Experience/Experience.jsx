@@ -1,70 +1,93 @@
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Work History</h2>
-        <div className="max-w-4xl mx-auto">
-          {/* Amazon Experience */}
-          <div className="mb-12">
-            <div className="flex justify-between items-center mb-2">
-              <h3 className="text-xl font-semibold">Supply Chain Operations Manager</h3>
-              <span className="text-gray-600">Sep 2021 - Current</span>
+    <section id="experience" className="py-20">
+      <div className="max-w-5xl mx-auto px-4">
+
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Work Experience
+        </h2>
+
+        <div className="space-y-12">
+
+          {/* Amazon */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
+              <h3 className="text-xl font-semibold">
+                Supply Chain Operations Manager
+              </h3>
+              <span className="text-gray-500">
+                Sep 2021 – Present
+              </span>
             </div>
-            <h4 className="text-blue-600 mb-4">Amazon</h4>
-            <ul className="space-y-2 text-gray-600">
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Developed and implemented Java-based Amazon ROC HawkEye Tampermonkey script to automate case management across platforms, reducing manual efforts by 90% and achieving significant time savings.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Created a Macros-based Excel report for utilization monitoring, reducing report generation time by 80%.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Spearheaded AI-driven scheduling optimization projects, reducing transit time and ensuring SLA adherence.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Managed a primary team of 20+ and a secondary team of 150+, driving operational efficiency through innovative solutions.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Collaborated with cross-functional teams across Europe and North America to implement cost-reduction initiatives, leading to measurable savings.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Delivered strategic reports using SQL and data visualization tools, providing actionable insights for stakeholders.</span>
-              </li>
+
+            <h4 className="text-blue-600 font-medium mb-4">
+              Amazon
+            </h4>
+
+            {/* Key Impact */}
+            <div className="mb-4">
+              <h5 className="font-semibold mb-2 text-gray-800">
+                Key Impact:
+              </h5>
+              <ul className="text-gray-700 space-y-1">
+                <li>• Delivered €40M+ in cost savings through network optimization and automation</li>
+                <li>• Reduced manual effort by 90% through workflow automation</li>
+                <li>• Led operations across Europe & North America logistics networks</li>
+              </ul>
+            </div>
+
+            {/* Responsibilities */}
+            <ul className="space-y-2 text-gray-600 text-sm leading-relaxed">
+              <li>• Managed linehaul operations and network execution across global transportation systems</li>
+              <li>• Led cross-functional programs focused on cost optimization and operational efficiency</li>
+              <li>• Oversaw route execution, carrier operations, and service reliability</li>
+              <li>• Managed teams of 20+ direct and 150+ extended members</li>
+              <li>• Built automation tools (Tampermonkey, Excel Macros) improving efficiency and turnaround time</li>
+              <li>• Delivered data-driven insights using SQL, Excel, and dashboards</li>
+              <li>• Led WBR / MBR / QBR reviews and operational governance</li>
             </ul>
+
           </div>
 
-          {/* IEnergizer Experience */}
-          <div className="mb-12">
-            <div className="flex justify-between items-center mb-2">
-              <h3 className="text-xl font-semibold">Assistant Manager - Operations</h3>
-              <span className="text-gray-600">Sep 2015 - Sep 2021</span>
+          {/* IEnergizer */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
+              <h3 className="text-xl font-semibold">
+                Assistant Manager – Operations
+              </h3>
+              <span className="text-gray-500">
+                Sep 2015 – Sep 2021
+              </span>
             </div>
-            <h4 className="text-blue-600 mb-4">IEnergizer</h4>
-            <ul className="space-y-2 text-gray-600">
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Led the successful launch of multiple projects including High-Risk Fraud and Credit Protection, achieving 99% quality and 100% customer satisfaction.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Managed high-severity escalation cases and collaborated with stakeholders for effective resolution.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Developed training programs for new hires and established SOPs to ensure consistent performance.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1">•</span>
-                <span>Coordinated with BI and MIS teams to produce detailed reports for management and stakeholders.</span>
-              </li>
+
+            <h4 className="text-blue-600 font-medium mb-4">
+              IEnergizer
+            </h4>
+
+            {/* Key Impact */}
+            <div className="mb-4">
+              <h5 className="font-semibold mb-2 text-gray-800">
+                Key Impact:
+              </h5>
+              <ul className="text-gray-700 space-y-1">
+                <li>• Achieved 99%+ quality and 95%+ CSAT in high-risk operations</li>
+                <li>• Built and scaled fraud & credit protection programs</li>
+              </ul>
+            </div>
+
+            {/* Responsibilities */}
+            <ul className="space-y-2 text-gray-600 text-sm leading-relaxed">
+              <li>• Managed high-severity escalation workflows and SLA adherence</li>
+              <li>• Designed SOPs and training programs for operational teams</li>
+              <li>• Built dashboards and reporting frameworks for performance tracking</li>
+              <li>• Led workforce planning and performance management initiatives</li>
+              <li>• Conducted root cause analysis and implemented process improvements</li>
             </ul>
+
           </div>
+
         </div>
       </div>
     </section>
