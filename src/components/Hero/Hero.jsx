@@ -32,6 +32,7 @@ const Hero = () => {
                 href="/Divyansh_Ahuja_CV.pdf"
                 download
                 className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition shadow-lg hover:scale-110"
+                title="Download CV"
               >
                 <i className="fas fa-download text-lg"></i>
               </a>
@@ -46,12 +47,12 @@ const Hero = () => {
 
         {/* Title */}
         <h2 className="text-xl md:text-2xl text-gray-600 mb-4">
-          Operations & Supply Chain Leader
+          Operations & Supply Chain Leader | Global Logistics & Network Optimization
         </h2>
 
         {/* Value Proposition */}
         <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
-          Driving €40M+ business impact through logistics optimization, automation, 
+          Delivered €40M+ business impact through logistics optimization, automation, 
           and network transformation across global supply chain operations
         </p>
 
@@ -70,29 +71,35 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex justify-center gap-8 mb-8">
+          {/* LinkedIn */}
           <a
             href="https://linkedin.com/in/divyanshahuja"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl text-gray-700 hover:text-blue-600 hover:scale-110 transition"
+            aria-label="LinkedIn Profile"
           >
             <i className="fab fa-linkedin"></i>
           </a>
 
+          {/* GitHub */}
           <a
-            href="mailto:da.2793@yahoo.com"
-            className="text-2xl text-gray-700 hover:text-blue-600 hover:scale-110 transition"
-          >
-            <i className="fas fa-envelope"></i>
-          </a>
-
-          <a
-            href="https://divyanshahuja.com"
+            href="https://github.com/DA2793"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl text-gray-700 hover:text-blue-600 hover:scale-110 transition"
+            aria-label="GitHub Profile"
           >
-            <i className="fas fa-globe"></i>
+            <i className="fab fa-github"></i>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:da.2793@yahoo.com"
+            className="text-2xl text-gray-700 hover:text-blue-600 hover:scale-110 transition"
+            aria-label="Email"
+          >
+            <i className="fas fa-envelope"></i>
           </a>
         </div>
 
