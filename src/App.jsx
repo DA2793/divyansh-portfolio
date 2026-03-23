@@ -33,7 +33,7 @@ function App() {
       <Navbar />
 
       {/* MAIN CONTENT */}
-      <main className="pt-[120px]">
+      <main>
 
         {/* 🔥 HERO (FULL WIDTH) */}
         <Hero />
