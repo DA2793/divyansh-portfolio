@@ -32,56 +32,71 @@ function App() {
     <div className="min-h-screen bg-gray-50 text-gray-800">
       <Navbar />
 
-      <main className="pt-[120px] max-w-6xl mx-auto px-4">
+      {/* MAIN CONTENT */}
+      <main className="pt-[120px]">
 
-        {/* Hero */}
+        {/* 🔥 HERO (FULL WIDTH) */}
+        <Hero />
+
+        {/* ABOUT */}
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <About />
+          </div>
+        </section>
+
+        {/* EXPERIENCE */}
         <section className="py-16">
-          <Hero />
+          <div className="max-w-6xl mx-auto px-4">
+            <Experience />
+          </div>
         </section>
 
-        {/* About */}
-        <section className="py-16 bg-white rounded-2xl shadow-sm">
-          <About />
+        {/* SKILLS */}
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <Skills />
+          </div>
         </section>
 
-        {/* Experience */}
+        {/* EDUCATION */}
         <section className="py-16">
-          <Experience />
+          <div className="max-w-6xl mx-auto px-4">
+            <Education />
+          </div>
         </section>
 
-        {/* Skills */}
-        <section className="py-16 bg-white rounded-2xl shadow-sm">
-          <Skills />
+        {/* PROJECTS */}
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <Projects />
+          </div>
         </section>
 
-        {/* Education */}
+        {/* ACHIEVEMENTS */}
         <section className="py-16">
-          <Education />
+          <div className="max-w-6xl mx-auto px-4">
+            <Achievements />
+          </div>
         </section>
 
-        {/* Projects */}
-        <section className="py-16 bg-white rounded-2xl shadow-sm">
-          <Projects />
+        {/* CERTIFICATIONS */}
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <Certifications />
+          </div>
         </section>
 
-        {/* Achievements */}
+        {/* CONTACT */}
         <section className="py-16">
-          <Achievements />
-        </section>
-
-        {/* Certifications */}
-        <section className="py-16 bg-white rounded-2xl shadow-sm">
-          <Certifications />
-        </section>
-
-        {/* Contact */}
-        <section className="py-16">
-          <Contact />
+          <div className="max-w-6xl mx-auto px-4">
+            <Contact />
+          </div>
         </section>
 
       </main>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <footer className="bg-white border-t border-gray-200 mt-16">
         <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -90,18 +105,9 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <div className="space-y-2 text-gray-600">
-                <p>
-                  <i className="fas fa-phone mr-2"></i>
-                  +91-7995028078
-                </p>
-                <p>
-                  <i className="fas fa-envelope mr-2"></i>
-                  da.2793@yahoo.com
-                </p>
-                <p>
-                  <i className="fas fa-map-marker-alt mr-2"></i>
-                  New Delhi, India
-                </p>
+                <p><i className="fas fa-phone mr-2"></i>+91-7995028078</p>
+                <p><i className="fas fa-envelope mr-2"></i>da.2793@yahoo.com</p>
+                <p><i className="fas fa-map-marker-alt mr-2"></i>New Delhi, India</p>
               </div>
             </div>
 
@@ -109,10 +115,10 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <div className="space-y-2">
-                <a href="#about" className="block text-gray-600 hover:text-blue-600 transition">About</a>
-                <a href="#experience" className="block text-gray-600 hover:text-blue-600 transition">Experience</a>
-                <a href="#skills" className="block text-gray-600 hover:text-blue-600 transition">Skills</a>
-                <a href="#projects" className="block text-gray-600 hover:text-blue-600 transition">Projects</a>
+                <a href="#about" className="block text-gray-600 hover:text-blue-600">About</a>
+                <a href="#experience" className="block text-gray-600 hover:text-blue-600">Experience</a>
+                <a href="#skills" className="block text-gray-600 hover:text-blue-600">Skills</a>
+                <a href="#projects" className="block text-gray-600 hover:text-blue-600">Projects</a>
               </div>
             </div>
 
@@ -124,17 +130,18 @@ function App() {
                   href="https://linkedin.com/in/divyanshahuja"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 text-2xl transition transform hover:scale-110"
+                  className="text-gray-600 hover:text-blue-600 text-2xl"
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
+
                 <a
-                  href="https://divyanshahuja.com"
+                  href="https://github.com/DA2793"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 text-2xl transition transform hover:scale-110"
+                  className="text-gray-600 hover:text-blue-600 text-2xl"
                 >
-                  <i className="fas fa-globe"></i>
+                  <i className="fab fa-github"></i>
                 </a>
               </div>
             </div>
