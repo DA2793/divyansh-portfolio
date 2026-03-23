@@ -17,10 +17,10 @@ const Hero = () => {
   ];
 
   const tags = [
-    "Amazon L4",
     "10+ Years Experience",
-    "EU & NA Operations",
-  ];
+  "EU & NA Operations",
+  "Automation & Process Excellence",
+];
 
   const socials = [
     { icon: "fab fa-linkedin-in", link: "https://linkedin.com/in/divyanshahuja" },
