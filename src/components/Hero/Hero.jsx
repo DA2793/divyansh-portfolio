@@ -1,142 +1,159 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.7, delay },
-});
+import { motion } from "framer-motion";
 
 const Hero = () => {
-  const [imageError, setImageError] = useState(false);
-
-  const stats = [
-    { value: "€40M+", label: "Impact Delivered" },
-    { value: "90%", label: "Automation Achieved" },
-    { value: "150+", label: "Team Managed" },
-  ];
-
-  const tags = [
-    "10+ Years Experience",
-    "EU & NA Operations",
-    "Automation & Process Excellence",
-  ];
-
-  const socials = [
-    { icon: "fab fa-linkedin-in", link: "https://linkedin.com/in/divyanshahuja" },
-    { icon: "fab fa-github", link: "https://github.com/DA2793" },
-    { icon: "fas fa-envelope", link: "mailto:da.2793@yahoo.com" },
-  ];
-
   return (
-    <section className="min-h-screen w-full bg-[#0B1828] text-white flex flex-col md:flex-row">
+    <section className="min-h-screen w-full bg-[#0b1b2b] text-white flex items-center px-6 md:px-16">
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full">
 
-      {/* LEFT SIDE */}
-      <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-20">
+        {/* ================= LEFT SIDE ================= */}
+        <div className="flex flex-col justify-center">
 
-        <motion.p {...fadeUp(0.1)} className="text-sm tracking-widest text-yellow-400 mb-6 uppercase">
-          Supply Chain & Operations
-        </motion.p>
-
-        {/* NAME */}
-        <motion.h1 {...fadeUp(0.2)} className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-          Divyansh <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">
-            Ahuja
-          </span>
-        </motion.h1>
-
-        {/* VALUE PROP */}
-        <motion.p {...fadeUp(0.3)} className="text-lg text-gray-300 max-w-xl mb-8">
-          Delivered €40M+ business impact through automation, logistics optimization,
-          and global supply chain operations across Europe and North America.
-        </motion.p>
-
-        {/* STATS */}
-        <motion.div {...fadeUp(0.4)} className="flex gap-10 mb-10 flex-wrap">
-          {stats.map((s, i) => (
-            <div key={i}>
-              <p className="text-2xl font-semibold">{s.value}</p>
-              <p className="text-xs uppercase tracking-wider text-gray-400">
-                {s.label}
-              </p>
-            </div>
-          ))}
-        </motion.div>
-
-        {/* TAGS */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-wrap gap-3 mb-10">
-          {tags.map((tag, i) => (
-            <span
-              key={i}
-              className="px-3 py-1 border border-yellow-400/30 text-yellow-300 text-xs uppercase tracking-wide"
-            >
-              {tag}
-            </span>
-          ))}
-        </motion.div>
-
-        {/* CTA BUTTONS */}
-        <motion.div {...fadeUp(0.6)} className="flex gap-4 flex-wrap mb-10">
-          <a
-            href="#projects"
-            className="bg-yellow-400 text-black px-6 py-3 text-sm font-semibold hover:bg-yellow-300 transition"
-          >
-            View Projects
-          </a>
-
-          <a
-            href="#experience"
-            className="border border-gray-500 px-6 py-3 text-sm hover:border-yellow-400 hover:text-yellow-400 transition"
-          >
-            View Experience
-          </a>
-        </motion.div>
-
-        {/* SOCIAL LINKS */}
-        <motion.div {...fadeUp(0.7)} className="flex gap-4">
-          {socials.map((s, i) => (
-            <a
-              key={i}
-              href={s.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 border border-gray-600 flex items-center justify-center hover:border-yellow-400 hover:text-yellow-400 transition"
-            >
-              <i className={s.icon}></i>
-            </a>
-          ))}
-        </motion.div>
-
-      </div>
-
-      {/* RIGHT SIDE */}
-      <div className="flex-1 flex items-center justify-center relative bg-[#0F1C2E]">
-
-        {/* Glow */}
-        <div className="absolute w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-3xl"></div>
-
-        {/* Profile Card */}
-        <motion.div
-          {...fadeUp(0.5)}
-          className="relative z-10 bg-[#11243A] p-10 rounded-2xl shadow-2xl border border-white/5"
-        >
-          {!imageError ? (
+          {/* Profile + Name */}
+          <div className="flex items-center gap-5 mb-6">
             <img
               src="/profile-pic.jpg"
               alt="Divyansh Ahuja"
-              className="w-48 h-48 rounded-full object-cover border-4 border-yellow-400 shadow-lg"
-              onError={() => setImageError(true)}
+              className="w-20 h-20 rounded-full object-cover shadow-lg"
             />
-          ) : (
-            <div className="w-48 h-48 rounded-full bg-gray-700 flex items-center justify-center text-3xl font-bold">
-              DA
+
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Divyansh <span className="text-yellow-400">Ahuja</span>
+            </h1>
+          </div>
+
+          {/* Designation */}
+          <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6 max-w-xl">
+            OPERATIONS & SUPPLY CHAIN LEADER <br />
+            GLOBAL LOGISTICS PROGRAMS | NETWORK OPTIMIZATION | PROCESS TRANSFORMATION
+          </p>
+
+          {/* Value Proposition */}
+          <p className="text-gray-400 mb-8 max-w-xl">
+            Delivered €40M+ business impact through automation, logistics optimization,
+            and global supply chain operations across Europe and North America.
+          </p>
+
+          {/* Metrics */}
+          <div className="flex gap-10 mb-10">
+            <div>
+              <p className="text-xl font-bold">€40M+</p>
+              <p className="text-xs text-gray-400">IMPACT DELIVERED</p>
             </div>
-          )}
-        </motion.div>
+            <div>
+              <p className="text-xl font-bold">90%</p>
+              <p className="text-xs text-gray-400">AUTOMATION ACHIEVED</p>
+            </div>
+            <div>
+              <p className="text-xl font-bold">150+</p>
+              <p className="text-xs text-gray-400">TEAM MANAGED</p>
+            </div>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex gap-5">
+            <a href="https://linkedin.com/in/divyanshahuja" target="_blank" rel="noreferrer">
+              <i className="fab fa-linkedin text-xl hover:text-yellow-400 transition"></i>
+            </a>
+            <a href="https://github.com/DA2793" target="_blank" rel="noreferrer">
+              <i className="fab fa-github text-xl hover:text-yellow-400 transition"></i>
+            </a>
+            <a href="mailto:da.2793@yahoo.com">
+              <i className="fas fa-envelope text-xl hover:text-yellow-400 transition"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* ================= RIGHT SIDE ================= */}
+        <div className="flex items-center">
+          <div className="relative pl-6 border-l border-gray-700 space-y-12">
+
+            {/* AMAZON */}
+            <motion.div whileHover={{ x: 5 }}>
+              <div className="flex items-start gap-4">
+                <img src="/amazon.png" className="w-10 h-10 object-contain mt-1" />
+
+                <div>
+                  <p className="font-semibold text-lg">Amazon</p>
+                  <p className="text-sm text-gray-400">
+                    Supply Chain Operations Manager
+                  </p>
+                  <p className="text-xs text-gray-500 mb-2">
+                    2021 — Present
+                  </p>
+
+                  <div className="flex gap-4 text-sm text-gray-400">
+                    <a href="#experience" className="hover:text-yellow-400 transition">
+                      Experience →
+                    </a>
+                    <a href="#projects" className="hover:text-yellow-400 transition">
+                      Projects →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* IENERGIZER AOM */}
+            <motion.div whileHover={{ x: 5 }}>
+              <div className="flex items-start gap-4">
+                <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
+
+                <div>
+                  <p className="font-semibold text-lg">iEnergizer</p>
+                  <p className="text-sm text-gray-400">
+                    Assistant Operations Manager
+                  </p>
+                  <p className="text-xs text-gray-500 mb-2">
+                    2019 — 2021
+                  </p>
+
+                  <div className="flex gap-4 text-sm text-gray-400">
+                    <a href="#experience" className="hover:text-yellow-400 transition">
+                      Experience →
+                    </a>
+                    <a href="#projects" className="hover:text-yellow-400 transition">
+                      Projects →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* TEAM LEAD */}
+            <motion.div whileHover={{ x: 5 }}>
+              <div className="flex items-start gap-4">
+                <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
+
+                <div>
+                  <p className="text-sm text-gray-400">Operations Team Lead</p>
+                  <p className="text-xs text-gray-500 mb-2">
+                    2017 — 2019
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* CSE */}
+            <motion.div whileHover={{ x: 5 }}>
+              <div className="flex items-start gap-4">
+                <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
+
+                <div>
+                  <p className="text-sm text-gray-400">
+                    Senior Customer Service Executive
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    2015 — 2017
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+          </div>
+        </div>
 
       </div>
-
     </section>
   );
 };
