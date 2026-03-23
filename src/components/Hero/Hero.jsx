@@ -57,7 +57,7 @@ const Hero = () => {
           {...fadeUp(0.3)}
           className="text-lg text-gray-300 max-w-xl mb-8"
         >
-          Driving €40M+ business impact through automation, logistics optimization,
+          Delivered €40M+ business impact through automation, logistics optimization,
           and global supply chain operations across Europe and North America.
         </motion.p>
 
