@@ -39,11 +39,7 @@ function App() {
         <Hero />
 
         {/* ABOUT */}
-        <section className="py-16 bg-white">
-          <div className="max-w-6xl mx-auto px-4">
-            <About />
-          </div>
-        </section>
+        <About />
 
         {/* EXPERIENCE */}
         <section className="py-16">
