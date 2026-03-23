@@ -17,7 +17,7 @@ const Navbar = () => {
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-[#0b1b2b]/80 backdrop-blur-lg border-b border-white/10 shadow-lg"
-          : "bg-transparent"
+          : "bg-[#0b1b2b]/60 backdrop-blur-md"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6">
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
 
           {/* NAV LINKS */}
-          <div className="hidden md:flex items-center space-x-8 text-sm text-gray-300">
+          <div className="hidden md:flex items-center space-x-8 text-sm text-gray-200">
 
             <a href="#about" className="hover:text-yellow-400 transition">
               About
