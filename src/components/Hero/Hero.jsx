@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen w-full pt-20 bg-[#071a2f] text-white flex items-center px-6 md:px-16 relative overflow-hidden">
+    <section className="min-h-screen w-full bg-[#071a2f] text-white flex items-center px-6 md:px-16 relative overflow-hidden">
 
       {/* Background Glow */}
-      <div className="absolute top-[-80px] left-[-80px] w-[420px] h-[420px] rounded-full bg-yellow-400/3 blur-[120px]" />
-      <div className="absolute bottom-[-60px] right-[5%] w-[360px] h-[360px] rounded-full bg-blue-500/3 blur-[120px]" />
+      <div className="absolute top-[-80px] left-[-80px] w-[420px] h-[420px] rounded-full bg-yellow-400/5 blur-[120px]" />
+      <div className="absolute bottom-[-60px] right-[5%] w-[360px] h-[360px] rounded-full bg-blue-500/5 blur-[120px]" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full relative z-10 items-center">
 
         {/* ================= LEFT ================= */}
         <div className="flex flex-col justify-center">
@@ -38,21 +38,21 @@ const Hero = () => {
             Delivered €40M+ cost savings through strategic initiatives across supply chain and financial services operations.
           </p>
 
-          {/* 🔥 FINAL METRICS */}
-          <div className="flex gap-10 mt-6 text-sm flex-wrap">
+          {/* Metrics */}
+          <div className="flex gap-10 mt-4 flex-wrap">
             <div>
               <p className="text-xl font-bold text-white">€40M+</p>
-              <p className="text-gray-400">Cost Savings Delivered</p>
+              <p className="text-gray-400 text-sm">Cost Savings Delivered</p>
             </div>
 
             <div>
               <p className="text-xl font-bold text-white">95%+</p>
-              <p className="text-gray-400">CSAT in BFSI Operations</p>
+              <p className="text-gray-400 text-sm">CSAT in BFSI Operations</p>
             </div>
 
             <div>
               <p className="text-xl font-bold text-white">Supply Chain & BFSI</p>
-              <p className="text-gray-400">Operations Leadership</p>
+              <p className="text-gray-400 text-sm">Operations Leadership</p>
             </div>
           </div>
 
@@ -73,7 +73,6 @@ const Hero = () => {
         {/* ================= RIGHT ================= */}
         <div className="flex items-center">
 
-          {/* Glass Card */}
           <div
             className="w-full rounded-2xl p-8 relative"
             style={{
@@ -83,8 +82,7 @@ const Hero = () => {
               boxShadow: "0 8px 32px rgba(0,0,0,0.35)",
             }}
           >
-
-            <div className="relative pl-6 border-l border-white/10 space-y-10">
+            <div className="relative pl-6 border-l border-white/10 space-y-8">
 
               {/* AMAZON */}
               <motion.div whileHover={{ x: 6 }}>
@@ -93,37 +91,41 @@ const Hero = () => {
                   <div>
                     <p className="font-semibold text-lg text-white">Amazon</p>
                     <p className="text-sm text-gray-300">Supply Chain Operations Manager</p>
-                    <p className="text-xs text-gray-500 mb-3">2021 — Present</p>
-
-                    <div className="flex gap-3">
-                      <a href="#experience" className="px-3 py-1 text-xs font-semibold rounded-md border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-[#071a2f] transition">
-                        Experience →
-                      </a>
-                      <a href="#projects" className="px-3 py-1 text-xs font-semibold rounded-md border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-[#071a2f] transition">
-                        Projects →
-                      </a>
-                    </div>
+                    <p className="text-xs text-gray-500 mb-2">2021 — Present</p>
                   </div>
                 </div>
               </motion.div>
 
-              {/* IENERGIZER */}
+              {/* IENERGIZER - AOM */}
               <motion.div whileHover={{ x: 6 }}>
                 <div className="flex items-start gap-4">
                   <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
                   <div>
                     <p className="font-semibold text-lg text-white">iEnergizer</p>
                     <p className="text-sm text-gray-300">Assistant Operations Manager</p>
-                    <p className="text-xs text-gray-500 mb-3">2019 — 2021</p>
+                    <p className="text-xs text-gray-500">2019 — 2021</p>
+                  </div>
+                </div>
+              </motion.div>
 
-                    <div className="flex gap-3">
-                      <a href="#experience" className="px-3 py-1 text-xs font-semibold rounded-md border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-[#071a2f] transition">
-                        Experience →
-                      </a>
-                      <a href="#projects" className="px-3 py-1 text-xs font-semibold rounded-md border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-[#071a2f] transition">
-                        Projects →
-                      </a>
-                    </div>
+              {/* TEAM LEAD */}
+              <motion.div whileHover={{ x: 6 }}>
+                <div className="flex items-start gap-4 opacity-90">
+                  <img src="/ienergizer.png" className="w-9 h-9 object-contain mt-1" />
+                  <div>
+                    <p className="text-sm text-white">Operations Team Lead</p>
+                    <p className="text-xs text-gray-500">2017 — 2019</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* SR EXEC */}
+              <motion.div whileHover={{ x: 6 }}>
+                <div className="flex items-start gap-4 opacity-80">
+                  <img src="/ienergizer.png" className="w-9 h-9 object-contain mt-1" />
+                  <div>
+                    <p className="text-sm text-white">Senior Customer Service Executive</p>
+                    <p className="text-xs text-gray-500">2015 — 2017</p>
                   </div>
                 </div>
               </motion.div>
