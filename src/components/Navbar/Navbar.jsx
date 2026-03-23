@@ -14,12 +14,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#0b1b2b]/80 backdrop-blur-lg border-b border-white/10 shadow-lg"
-          : "bg-[#0b1b2b]/60 backdrop-blur-md"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
+      ${scrolled
+        ? "bg-[#0b1b2b]/95 backdrop-blur-xl border-b border-white/10 shadow-lg"
+        : "bg-[#0b1b2b]/85 backdrop-blur-lg"
       }`}
     >
+      {/* HARD BACKGROUND LAYER (fixes white patch) */}
+      <div className="absolute inset-0 -z-10 bg-[#0b1b2b]" />
+
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
 
@@ -52,6 +55,7 @@ const Navbar = () => {
             </a>
 
           </div>
+
         </div>
       </div>
     </nav>
