@@ -71,7 +71,7 @@ const Hero = () => {
             {/* AMAZON */}
             <motion.div whileHover={{ x: 5 }}>
               <div className="flex items-start gap-4">
-                <img src="/amazon.png" className="w-10 h-10 object-contain mt-1" />
+                <img src="/amazon.png" alt="Amazon" className="w-10 h-10 object-contain mt-1" />
 
                 <div>
                   <p className="font-semibold text-lg">Amazon</p>
@@ -82,11 +82,18 @@ const Hero = () => {
                     2021 — Present
                   </p>
 
-                  <div className="flex gap-4 text-sm text-gray-400">
-                    <a href="#experience" className="hover:text-yellow-400 transition">
+                  <div className="flex gap-6 text-sm mt-2">
+                    <a
+                      href="#experience"
+                      className="relative text-gray-400 hover:text-yellow-400 transition font-medium tracking-wide cursor-pointer after:block after:h-[1px] after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    >
                       Experience →
                     </a>
-                    <a href="#projects" className="hover:text-yellow-400 transition">
+
+                    <a
+                      href="#projects"
+                      className="relative text-gray-400 hover:text-yellow-400 transition font-medium tracking-wide cursor-pointer after:block after:h-[1px] after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    >
                       Projects →
                     </a>
                   </div>
@@ -97,7 +104,7 @@ const Hero = () => {
             {/* IENERGIZER AOM */}
             <motion.div whileHover={{ x: 5 }}>
               <div className="flex items-start gap-4">
-                <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
+                <img src="/ienergizer.png" alt="iEnergizer" className="w-10 h-10 object-contain mt-1" />
 
                 <div>
                   <p className="font-semibold text-lg">iEnergizer</p>
@@ -108,11 +115,18 @@ const Hero = () => {
                     2019 — 2021
                   </p>
 
-                  <div className="flex gap-4 text-sm text-gray-400">
-                    <a href="#experience" className="hover:text-yellow-400 transition">
+                  <div className="flex gap-6 text-sm mt-2">
+                    <a
+                      href="#experience"
+                      className="relative text-gray-400 hover:text-yellow-400 transition font-medium tracking-wide cursor-pointer after:block after:h-[1px] after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    >
                       Experience →
                     </a>
-                    <a href="#projects" className="hover:text-yellow-400 transition">
+
+                    <a
+                      href="#projects"
+                      className="relative text-gray-400 hover:text-yellow-400 transition font-medium tracking-wide cursor-pointer after:block after:h-[1px] after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    >
                       Projects →
                     </a>
                   </div>
@@ -123,11 +137,11 @@ const Hero = () => {
             {/* TEAM LEAD */}
             <motion.div whileHover={{ x: 5 }}>
               <div className="flex items-start gap-4">
-                <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
+                <img src="/ienergizer.png" alt="iEnergizer" className="w-10 h-10 object-contain mt-1" />
 
                 <div>
                   <p className="text-sm text-gray-400">Operations Team Lead</p>
-                  <p className="text-xs text-gray-500 mb-2">
+                  <p className="text-xs text-gray-500">
                     2017 — 2019
                   </p>
                 </div>
@@ -137,7 +151,7 @@ const Hero = () => {
             {/* CSE */}
             <motion.div whileHover={{ x: 5 }}>
               <div className="flex items-start gap-4">
-                <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
+                <img src="/ienergizer.png" alt="iEnergizer" className="w-10 h-10 object-contain mt-1" />
 
                 <div>
                   <p className="text-sm text-gray-400">
