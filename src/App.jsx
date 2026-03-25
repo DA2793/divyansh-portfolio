@@ -48,11 +48,7 @@ function App() {
         <Skills />
 
         {/* EDUCATION */}
-        <section className="py-16">
-          <div className="max-w-6xl mx-auto px-4">
-            <Education />
-          </div>
-        </section>
+        <Education />
 
         {/* PROJECTS */}
         <section className="py-16 bg-white">
