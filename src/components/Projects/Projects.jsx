@@ -4,7 +4,7 @@ const Projects = () => {
     company: "Amazon",
     type: "AI · Network Strategy",
     description:
-      "Led AI-driven scheduling and disruption reduction initiatives across the European Middle Mile transportation network. Conducted root cause analysis, collaborated with stakeholders to pilot corrective actions, and stabilized operations at scale — improving planning decisions and reducing inefficiencies across the network.",
+      "Redesigned scheduling and disruption management across the European Middle Mile transportation network using AI-driven optimization and root-cause interventions. Improved planning decisions, reduced inefficiencies, and stabilized network performance at scale.",
     impact: "€1.8M+ in cost savings",
   };
 
@@ -14,7 +14,7 @@ const Projects = () => {
       company: "Amazon",
       type: "Automation · Cost Impact",
       description:
-        "Developed an automation script to address recurring sourcing capacity challenges — cap hits and bandwidth gaps that required manual intervention and cross-functional coordination. Delivered significant financial impact validated by the Finance team.",
+        "Built an automation solution to resolve recurring capacity constraints and bandwidth gaps in transportation scheduling. Eliminated manual coordination and enabled faster, more accurate sourcing decisions across the network.",
       impact: "$11M in estimated savings",
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
       company: "Amazon",
       type: "Automation · Execution",
       description:
-        "Built browser-based automation to streamline case management across platforms and automated carrier cancellation workflows across multiple lane types. Eliminated repetitive manual actions and improved execution speed across operations.",
+        "Developed automation layers to streamline case management and carrier workflows across multiple operational systems. Reduced manual intervention, improved execution speed, and enabled consistent handling across high-volume operations.",
       impact: "90–95% reduction in manual effort",
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
       company: "Amazon",
       type: "Data · Systems",
       description:
-        "Built a real-time analytics platform for operations performance tracking, centralized dashboards replacing fragmented manual reporting, and a standardized employee performance tracking system with behavioral and operational metrics.",
+        "Designed a real-time analytics ecosystem for operations performance, including interval-based tracking, centralized dashboards, and structured performance measurement frameworks. Enabled faster decision-making, mid-shift interventions, and improved operational accountability.",
       impact: "95% reduction in reporting effort · 30% improvement in evaluation consistency",
     },
     {
@@ -43,6 +43,19 @@ const Projects = () => {
     },
   ];
 
+  const companyAccent = {
+    Amazon: {
+      bg: "bg-[#FF9900]/20",
+      text: "text-[#FF9900]",
+      dot: "bg-[#FF9900]",
+    },
+    iEnergizer: {
+      bg: "bg-[#4a9eff]/20",
+      text: "text-[#4a9eff]",
+      dot: "bg-[#4a9eff]",
+    },
+  };
+
   return (
     <section id="projects" className="py-24 bg-[#0f172a] text-white">
       <div className="max-w-5xl mx-auto px-6">
@@ -54,7 +67,7 @@ const Projects = () => {
           Selected Work
         </h2>
 
-        {/* Featured project — full width */}
+        {/* Featured card — full width */}
         <div
           className="rounded-2xl p-8 mb-6 border border-white/10 hover:border-white/20 transition-all duration-300"
           style={{
@@ -62,57 +75,72 @@ const Projects = () => {
               "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
           }}
         >
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-[11px] text-gray-400 uppercase tracking-wider">
+          <div className="flex items-center justify-between mb-4">
+            <p className="text-[11px] font-medium text-gray-400 uppercase tracking-wider">
               {featured.type}
             </p>
-            <span className="text-[11px] text-gray-500">
+            <span
+              className={`text-[11px] font-semibold px-2.5 py-1 rounded-full ${companyAccent[featured.company].bg} ${companyAccent[featured.company].text}`}
+            >
               {featured.company}
             </span>
           </div>
-          <h4 className="text-lg font-semibold text-white mb-3">
+          <h4 className="text-xl font-bold text-white mb-3">
             {featured.title}
           </h4>
-          <p className="text-sm text-gray-300 leading-relaxed mb-4 max-w-3xl">
+          <p className="text-sm text-gray-300 leading-relaxed mb-6 max-w-3xl">
             {featured.description}
           </p>
-          <div className="pt-3 border-t border-white/10">
-            <p className="text-sm font-semibold text-yellow-400">
+          <div className="pt-4 border-t border-white/10 flex items-center gap-2">
+            <span
+              className={`w-2 h-2 rounded-full ${companyAccent[featured.company].dot}`}
+            />
+            <p className="text-sm font-bold text-yellow-400">
               {featured.impact}
             </p>
           </div>
         </div>
 
-        {/* Project grid — 2 columns */}
+        {/* Project grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map(({ title, company, type, description, impact }) => (
-            <div
-              key={title}
-              className="rounded-2xl p-7 border border-white/10 hover:border-white/20 transition-all duration-300"
-              style={{
-                background:
-                  "linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02))",
-              }}
-            >
-              <div className="flex items-center justify-between mb-3">
-                <p className="text-[11px] text-gray-400 uppercase tracking-wider">
-                  {type}
+          {projects.map(({ title, company, type, description, impact }) => {
+            const accent = companyAccent[company];
+            return (
+              <div
+                key={title}
+                className="rounded-2xl p-7 border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02))",
+                }}
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <p className="text-[11px] font-medium text-gray-400 uppercase tracking-wider">
+                    {type}
+                  </p>
+                  <span
+                    className={`text-[11px] font-semibold px-2.5 py-1 rounded-full ${accent.bg} ${accent.text}`}
+                  >
+                    {company}
+                  </span>
+                </div>
+                <h4 className="text-base font-semibold text-white mb-3">
+                  {title}
+                </h4>
+                <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-1">
+                  {description}
                 </p>
-                <span className="text-[11px] text-gray-500">{company}</span>
+                <div className="pt-4 border-t border-white/10 flex items-center gap-2">
+                  <span
+                    className={`w-2 h-2 rounded-full flex-shrink-0 ${accent.dot}`}
+                  />
+                  <p className="text-xs font-bold text-yellow-400">
+                    {impact}
+                  </p>
+                </div>
               </div>
-              <h4 className="text-base font-semibold text-white mb-3">
-                {title}
-              </h4>
-              <p className="text-sm text-gray-300 leading-relaxed mb-4">
-                {description}
-              </p>
-              <div className="pt-3 border-t border-white/10">
-                <p className="text-xs font-semibold text-yellow-400">
-                  {impact}
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
