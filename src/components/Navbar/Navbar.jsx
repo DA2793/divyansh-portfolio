@@ -1,16 +1,40 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      if (!isHome) return;
+
+      const sections = ["contact", "skills", "projects", "experience", "about"];
+      const current = sections.find((id) => {
+        const el = document.getElementById(id);
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        return rect.top <= 120 && rect.bottom > 120;
+      });
+
+      setActiveSection(current || "");
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHome]);
+
+  const navLinks = [
+    { id: "about", label: "About" },
+    { id: "experience", label: "Experience" },
+    { id: "projects", label: "Projects" },
+    { id: "skills", label: "Skills" },
+    { id: "contact", label: "Contact" },
+  ];
 
   return (
     <nav
@@ -20,42 +44,29 @@ const Navbar = () => {
         : "bg-[#0b1b2b]/85 backdrop-blur-lg"
       }`}
     >
-      {/* HARD BACKGROUND LAYER (fixes white patch) */}
       <div className="absolute inset-0 -z-10 bg-[#0b1b2b]" />
 
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
-
-          {/* LOGO */}
           <div className="text-lg font-semibold text-white tracking-wide">
             Divyansh Ahuja
           </div>
 
-          {/* NAV LINKS */}
-          <div className="hidden md:flex items-center space-x-8 text-sm text-gray-200">
-
-            <a href="#about" className="hover:text-yellow-400 transition">
-              About
-            </a>
-
-            <a href="#experience" className="hover:text-yellow-400 transition">
-              Experience
-            </a>
-
-            <a href="#projects" className="hover:text-yellow-400 transition">
-              Projects
-            </a>
-
-            <a href="#skills" className="hover:text-yellow-400 transition">
-              Skills
-            </a>
-
-            <a href="#contact" className="hover:text-yellow-400 transition">
-              Contact
-            </a>
-
+          <div className="hidden md:flex items-center space-x-8 text-sm">
+            {navLinks.map(({ id, label }) => (
+              <a
+                key={id}
+                href={isHome ? `#${id}` : `/#${id}`}
+                className={`transition ${
+                  activeSection === id
+                    ? "text-yellow-400"
+                    : "text-gray-200 hover:text-yellow-400"
+                }`}
+              >
+                {label}
+              </a>
+            ))}
           </div>
-
         </div>
       </div>
     </nav>
