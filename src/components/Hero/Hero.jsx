@@ -32,13 +32,13 @@ const Hero = () => {
           </p>
 
           <p className="text-gray-400 mb-8 max-w-xl">
-            Delivered €40M+ cost savings through strategic initiatives across supply chain and financial services operations.
+            Delivered €15M+ cost savings through strategic initiatives across supply chain and financial services operations.
           </p>
 
           {/* Metrics */}
           <div className="flex gap-10 flex-wrap mb-8">
             <div>
-              <p className="text-xl font-bold text-white">€40M+</p>
+              <p className="text-xl font-bold text-white">€15M+</p>
               <p className="text-gray-400 text-sm">Cost Savings Delivered</p>
             </div>
 

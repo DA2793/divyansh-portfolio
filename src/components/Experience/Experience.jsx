@@ -1,13 +1,13 @@
 const Experience = () => {
   const amazonImpact = [
-    { value: "€40M+", label: "Cost Savings" },
+    { value: "€15M+", label: "Cost Savings" },
     { value: "90%", label: "Manual Effort Reduced" },
     { value: "EU+NA", label: "Markets Led" },
   ];
 
   const amazonBullets = [
     "Owned linehaul network execution across EU & NA, driving cost, speed, and reliability trade-offs at scale",
-    "Delivered €40M+ in cost savings through network optimization, automation, and execution control",
+    "Delivered €15M+ in cost savings through network optimization, automation, and execution control",
     "Reduced manual intervention by 90% through automation across reporting and planning workflows",
     "Established execution guardrails and structured review cadences to improve decision quality across planning and operations",
   ];
