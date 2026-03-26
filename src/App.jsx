@@ -56,6 +56,18 @@ function App() {
         {/* ACHIEVEMENTS */}
         <Achievements />
 
+        {/* ── Dark accent band ── */}
+        <div className="bg-[#0f172a] py-16">
+          <div className="max-w-5xl mx-auto px-6 text-center">
+            <p className="text-sm text-gray-400 uppercase tracking-[0.18em] mb-3">
+              Career Impact
+            </p>
+            <p className="text-2xl md:text-3xl font-bold text-white">
+              €15M+ in cost savings driven through automation & network optimization
+            </p>
+          </div>
+        </div>
+
         {/* CERTIFICATIONS */}
         <Certifications />
 

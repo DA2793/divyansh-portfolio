@@ -3,10 +3,10 @@ const Achievements = () => {
     <section id="achievements" className="py-24 bg-[#f7f6f2] text-[#0f172a]">
       <div className="max-w-5xl mx-auto px-6">
         {/* Header */}
-        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-gray-400 text-center mb-3">
+        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-gray-400 mb-3">
           Recognition
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-16">
           Achievements & Recognition
         </h2>
 
