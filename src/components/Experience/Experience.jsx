@@ -86,7 +86,7 @@ const Experience = () => {
             </ul>
 
             <div className="flex justify-end">
-              <button className="text-xs font-semibold text-white border border-white/20 rounded-lg px-4 py-2 hover:bg-white hover:text-[#0b1b2b] transition">
+              <button className="text-xs font-semibold text-yellow-400 border border-yellow-400 rounded-lg px-4 py-2 hover:bg-yellow-400 hover:text-[#0b1b2b] transition">
                 Explore Work →
               </button>
             </div>
@@ -153,7 +153,7 @@ const Experience = () => {
             </ul>
 
             <div className="flex justify-end">
-              <button className="text-xs font-semibold text-white border border-white/20 rounded-lg px-4 py-2 hover:bg-white hover:text-[#0b1b2b] transition">
+              <button className="text-xs font-semibold text-yellow-400 border border-yellow-400 rounded-lg px-4 py-2 hover:bg-yellow-400 hover:text-[#0b1b2b] transition">
                 Explore Work →
               </button>
             </div>
