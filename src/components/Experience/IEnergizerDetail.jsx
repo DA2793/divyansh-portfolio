@@ -237,26 +237,34 @@ const IEnergizerDetail = () => {
 
           {/* Program cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition">
               <h4 className="text-sm font-bold text-[#0f172a] mb-2">
                 High Risk Fraud (HRF)
               </h4>
               <p className="text-sm text-[#475569] leading-relaxed">
                 A proactive system to detect and prevent fraudulent credit card
-                transactions — built around identifying patterns like unusual
-                usage, unsecured POS activity, and unverified merchants.
+                transactions by identifying patterns like unusual usage,
+                unsecured POS activity, and unverified merchants.
+                <br /><br />
+                Built the program from scratch — wrote SOPs, designed
+                train-the-trainer programs for scalable onboarding, and drove
+                incentive policy design through stakeholder alignment and
+                approval.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition">
               <h4 className="text-sm font-bold text-[#0f172a] mb-2">
                 Credit Protection
               </h4>
               <p className="text-sm text-[#475569] leading-relaxed">
                 An insurance-linked offering to protect customers against card
-                theft, loss, and unforeseen life events. Achieved{" "}
+                theft, loss, and unforeseen life events.
+                <br /><br />
+                Led end-to-end program design — SOP creation, trainer
+                enablement, and incentive policy structuring. Achieved{" "}
                 <strong>99% quality</strong> and{" "}
-                <strong>100% customer satisfaction</strong> through rigorous
-                monitoring and SOP design.
+                <strong>100% customer satisfaction</strong> through disciplined
+                monitoring and performance governance.
               </p>
             </div>
           </div>
