@@ -65,61 +65,34 @@ function App() {
       </main>
 
       {/* FOOTER */}
-      <footer className="bg-white border-t border-gray-200 mt-16">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-            {/* Contact */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <div className="space-y-2 text-gray-600">
-                <p><i className="fas fa-phone mr-2"></i>+91-7995028078</p>
-                <p><i className="fas fa-envelope mr-2"></i>da.2793@yahoo.com</p>
-                <p><i className="fas fa-map-marker-alt mr-2"></i>New Delhi, India</p>
-              </div>
-            </div>
-
-            {/* Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <div className="space-y-2">
-                <a href="#about" className="block text-gray-600 hover:text-blue-600">About</a>
-                <a href="#experience" className="block text-gray-600 hover:text-blue-600">Experience</a>
-                <a href="#skills" className="block text-gray-600 hover:text-blue-600">Skills</a>
-                <a href="#projects" className="block text-gray-600 hover:text-blue-600">Projects</a>
-              </div>
-            </div>
-
-            {/* Social */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Connect</h3>
-              <div className="flex space-x-5">
-                <a
-                  href="https://linkedin.com/in/divyanshahuja"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 text-2xl"
-                >
-                  <i className="fab fa-linkedin"></i>
-                </a>
-
-                <a
-                  href="https://github.com/DA2793"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 text-2xl"
-                >
-                  <i className="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="border-t border-gray-200 mt-10 pt-6 text-center">
-            <p className="text-gray-600 text-sm">
-              © {new Date().getFullYear()} Divyansh Ahuja. All rights reserved.
-            </p>
+      <footer className="bg-[#0f172a] border-t border-white/10">
+        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} Divyansh Ahuja. All rights reserved.
+          </p>
+          <div className="flex items-center gap-5">
+            <a
+              href="https://linkedin.com/in/divyanshahuja"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition text-lg"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/DA2793"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition text-lg"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href="mailto:da.2793@yahoo.com"
+              className="text-gray-400 hover:text-white transition text-lg"
+            >
+              <i className="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
       </footer>
