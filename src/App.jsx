@@ -25,8 +25,11 @@ function App() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+      <div className="min-h-screen flex items-center justify-center bg-[#0b1b2b]">
+        <div className="text-center animate-pulse">
+          <p className="text-3xl font-bold text-white tracking-wider">DA</p>
+          <div className="w-12 h-px bg-yellow-400 mx-auto mt-3"></div>
+        </div>
       </div>
     );
   }
