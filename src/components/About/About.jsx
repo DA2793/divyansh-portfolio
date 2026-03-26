@@ -54,7 +54,8 @@ const About = () => {
               optimization and disruption reduction programs.
             </p>
             <p className="text-[#334155] leading-relaxed text-base">
-              Before that, I led customer operations in the BFSI domain —
+              Prior to Amazon, I led customer operations in the BFSI domain
+              at iEnergizer —
               managing high-severity escalations, driving process improvements,
               and operating in consistently high customer satisfaction
               environments. The thread through all of it: making complex
