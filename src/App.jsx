@@ -11,6 +11,7 @@ import Achievements from './components/Achievements/Achievements';
 import Certifications from './components/Certifications/Certifications';
 import Contact from './components/Contact/Contact';
 import IEnergizerDetail from './components/Experience/IEnergizerDetail';
+import AmazonDetail from './components/Experience/AmazonDetail';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -81,6 +82,7 @@ function App() {
         } />
 
         <Route path="/ienergizer" element={<IEnergizerDetail />} />
+        <Route path="/amazon" element={<AmazonDetail />} />
       </Routes>
     </div>
   );
