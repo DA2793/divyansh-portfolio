@@ -60,11 +60,7 @@ function App() {
         <Certifications />
 
         {/* CONTACT */}
-        <section className="py-16">
-          <div className="max-w-6xl mx-auto px-4">
-            <Contact />
-          </div>
-        </section>
+        <Contact />
 
       </main>
 
