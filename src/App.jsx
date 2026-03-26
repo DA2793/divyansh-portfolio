@@ -54,11 +54,7 @@ function App() {
         <Projects />
 
         {/* ACHIEVEMENTS */}
-        <section className="py-16">
-          <div className="max-w-6xl mx-auto px-4">
-            <Achievements />
-          </div>
-        </section>
+        <Achievements />
 
         {/* CERTIFICATIONS */}
         <section className="py-16 bg-white">

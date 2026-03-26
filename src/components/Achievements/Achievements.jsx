@@ -1,85 +1,228 @@
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-20">
-      <div className="max-w-5xl mx-auto px-4">
-
-        <h2 className="text-3xl font-bold text-center mb-12">
+    <section id="achievements" className="py-24 bg-[#f7f6f2] text-[#0f172a]">
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Header */}
+        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-gray-400 text-center mb-3">
+          Recognition
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           Achievements & Recognition
         </h2>
 
-        <div className="space-y-8">
+        {/* ── Tier 1: Manager of the Quarter ── */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          {/* Q1 2025 */}
+          <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-[#FF9900]/10 text-[#b36a00]">
+                Amazon
+              </span>
+              <span className="text-xs text-gray-400 font-medium">
+                Q1 2025
+              </span>
+            </div>
 
-          {/* Amazon 2025 */}
-          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
-              Manager of the Quarter – Amazon
-            </h3>
-            <p className="text-gray-500 mb-2">Q1, 2025</p>
+            <div className="flex items-start gap-3 mb-1">
+              <div className="w-9 h-9 rounded-lg bg-[#0f172a] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5L8 10l-3 1.5.5-3.5L3 5.5l3.5-.5L8 2z"
+                    stroke="white"
+                    strokeWidth="1.3"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-base font-bold text-[#0f172a]">
+                  Manager of the Quarter
+                </h3>
+                <p className="text-xs text-gray-400 mt-0.5">
+                  Automation & Visibility Transformation
+                </p>
+              </div>
+            </div>
 
-            <ul className="text-gray-700 space-y-1 text-sm">
-              <li>• Recognized for leading automation and visibility initiatives across logistics workflows</li>
-              <li>• Improved operational efficiency, network visibility, and decision-making speed</li>
-              <li>• Delivered measurable productivity gains and headcount optimization</li>
+            <ul className="space-y-2.5 mt-5">
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Launched a real-time visibility tool and expanded workflow
+                automation across carrier lanes
+              </li>
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Improved operational efficiency by reducing manual intervention
+                across execution paths
+              </li>
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Delivered measurable productivity gains and headcount
+                optimization across the network
+              </li>
             </ul>
           </div>
 
-          {/* Amazon 2024 */}
-          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
-              Manager of the Quarter – Amazon
-            </h3>
-            <p className="text-gray-500 mb-2">Q1, 2024</p>
+          {/* Q1 2024 */}
+          <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-[#FF9900]/10 text-[#b36a00]">
+                Amazon
+              </span>
+              <span className="text-xs text-gray-400 font-medium">
+                Q1 2024
+              </span>
+            </div>
 
-            <ul className="text-gray-700 space-y-1 text-sm">
-              <li>• Led AI-driven cost optimization initiatives across EU network</li>
-              <li>• Delivered €1.8M in cost savings through disruption reduction strategies</li>
-              <li>• Improved operational efficiency and decision-making capability</li>
+            <div className="flex items-start gap-3 mb-1">
+              <div className="w-9 h-9 rounded-lg bg-[#0f172a] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5L8 10l-3 1.5.5-3.5L3 5.5l3.5-.5L8 2z"
+                    stroke="white"
+                    strokeWidth="1.3"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-base font-bold text-[#0f172a]">
+                  Manager of the Quarter
+                </h3>
+                <p className="text-xs text-gray-400 mt-0.5">
+                  AI-led Cost Optimization (EU Middle Mile Network)
+                </p>
+              </div>
+            </div>
+
+            <ul className="space-y-2.5 mt-5">
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Spearheaded AI-driven cost optimization initiatives across the
+                EU Middle Mile network
+              </li>
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Delivered €1.8M in cost savings through disruption reduction
+                strategies
+              </li>
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Improved cross-functional decision-making through enhanced data
+                visibility
+              </li>
             </ul>
           </div>
+        </div>
 
-          {/* IEnergizer */}
-          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
-              Global Supervisor of the Year – IEnergizer
-            </h3>
-            <p className="text-gray-500 mb-2">2020</p>
-
-            <ul className="text-gray-700 space-y-1 text-sm">
-              <li>• Recognized for exceptional leadership and consistent high performance</li>
-              <li>• Delivered strong operational outcomes during pandemic-driven challenges</li>
-            </ul>
+        {/* ── Tier 2: Global Supervisor of the Year ── */}
+        <div className="bg-gradient-to-br from-[#f8fafc] to-[#eef2f7] rounded-2xl p-7 border border-gray-200 shadow-sm mb-6 hover:shadow-md transition-shadow duration-200">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-[#0f4c81]/10 text-[#0f4c81]">
+              iEnergizer
+            </span>
+            <span className="text-xs text-gray-400 font-medium">2020</span>
           </div>
 
-          {/* Monthly Awards */}
-          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
-            <h3 className="text-xl font-semibold text-blue-600 mb-4">
-              Manager of the Month – Amazon
-            </h3>
+          <div className="flex items-start gap-3 mb-1">
+            <div className="w-9 h-9 rounded-lg bg-[#0f172a] flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="5.5" stroke="white" strokeWidth="1.3" />
+                <path
+                  d="M8 5v3l2 1.5"
+                  stroke="white"
+                  strokeWidth="1.3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-base font-bold text-[#0f172a]">
+                Global Supervisor of the Year
+              </h3>
+              <p className="text-xs text-gray-400 mt-0.5">
+                Recognized by Credit One Bank
+              </p>
+            </div>
+          </div>
 
-            <p className="text-gray-700 text-sm">
-              Sep '25, Jun '25, Jan '25, Dec '24, Sep '24, Mar '24, Jan '23
+          <ul className="space-y-2.5 mt-5">
+            <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0f4c81] shrink-0" />
+              Led high-risk fraud operations with consistent execution
+              excellence during peak disruption
+            </li>
+            <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0f4c81] shrink-0" />
+              Sustained customer trust and service quality with zero compromise
+              on control standards
+            </li>
+            <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0f4c81] shrink-0" />
+              Delivered stable performance in a high-risk, high-stakes
+              operational environment during the pandemic year
+            </li>
+          </ul>
+        </div>
+
+        {/* ── Tier 3: Recognition Strip ── */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <p className="text-[11px] font-semibold text-[#b36a00] mb-2">
+              Amazon
             </p>
+            <h4 className="text-sm font-bold mb-3">Manager of the Month</h4>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Sep '25",
+                "Jun '25",
+                "Jan '25",
+                "Dec '24",
+                "Sep '24",
+                "Mar '24",
+                "Jan '23",
+              ].map((m) => (
+                <span
+                  key={m}
+                  className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#FF9900]/10 text-[#b36a00]"
+                >
+                  {m}
+                </span>
+              ))}
+            </div>
           </div>
 
-          {/* IEnergizer Monthly */}
-          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
-            <h3 className="text-xl font-semibold text-blue-600 mb-4">
-              Team Supervisor of the Month – IEnergizer
-            </h3>
-
-            <p className="text-gray-700 text-sm">
-              Aug '19, May '18
+          <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <p className="text-[11px] font-semibold text-[#0f4c81] mb-2">
+              iEnergizer
             </p>
+            <h4 className="text-sm font-bold mb-3">
+              Team Supervisor of the Month
+            </h4>
+            <div className="flex gap-2">
+              {["Aug '19", "May '18"].map((m) => (
+                <span
+                  key={m}
+                  className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#0f4c81]/10 text-[#0f4c81]"
+                >
+                  {m}
+                </span>
+              ))}
+            </div>
           </div>
 
-          {/* Additional */}
-          <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
-              Quality Champion of the Year – IEnergizer
-            </h3>
-            <p className="text-gray-500 text-sm">2016</p>
+          <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <p className="text-[11px] font-semibold text-[#0f4c81] mb-2">
+              iEnergizer
+            </p>
+            <h4 className="text-sm font-bold mb-3">
+              Quality Champion of the Year
+            </h4>
+            <span className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#0f4c81]/10 text-[#0f4c81]">
+              2016
+            </span>
           </div>
-
         </div>
       </div>
     </section>
