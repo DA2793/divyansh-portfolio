@@ -21,7 +21,9 @@ const Navbar = () => {
         return rect.top <= 120 && rect.bottom > 120;
       });
 
-      setActiveSection(current || "");
+      // If scrolled to bottom, activate contact
+      const atBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100;
+      setActiveSection(atBottom ? "contact" : current || "");
     };
 
     window.addEventListener("scroll", handleScroll);
