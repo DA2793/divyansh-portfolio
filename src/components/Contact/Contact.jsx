@@ -10,7 +10,7 @@ const Contact = () => {
     {
       icon: <i className="fas fa-phone" />,
       label: "Phone",
-      value: "+91 7995028078",
+      value: "+91 7995028078 · +91 9599411791",
       href: "tel:+917995028078",
     },
     {
