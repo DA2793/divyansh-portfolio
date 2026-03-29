@@ -10,8 +10,13 @@ const Contact = () => {
     {
       icon: <i className="fas fa-phone" />,
       label: "Phone",
-      value: "+91 7995028078 · +91 9599411791",
-      href: "tel:+917995028078",
+      value: (
+        <span className="flex flex-col gap-1">
+          <a href="tel:+919599411791" className="text-sm font-medium text-[#0f172a] hover:text-gray-500 transition-colors">+91 9599411791</a>
+          <a href="tel:+917995028078" className="text-sm font-medium text-[#0f172a] hover:text-gray-500 transition-colors">+91 7995028078</a>
+        </span>
+      ),
+      href: null,
     },
     {
       icon: <i className="fas fa-map-marker-alt" />,
