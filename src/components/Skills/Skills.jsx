@@ -47,7 +47,8 @@ const Skills = () => {
       highlight:
         "Design systems and tools that reduce manual effort and scale decision-making across operations.",
       items: [
-        "Build automation using SQL, Excel, and lightweight scripting to eliminate repetitive workflows",
+        "Build automation using Python, SQL, Excel, and lightweight scripting to eliminate repetitive workflows",
+        "Leverage Generative AI to accelerate operational analysis, surface network insights, and inform workflow design",
         "Applied AI-driven optimization to reduce disruptions and ad hoc costs across the European network",
         "Lead cross-functional programs from ambiguity to structured execution",
       ],

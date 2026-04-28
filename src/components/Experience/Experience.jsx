@@ -8,10 +8,10 @@ const Experience = () => {
   ];
 
   const amazonBullets = [
-    "Owned linehaul network execution across EU & NA, driving cost, speed, and reliability trade-offs at scale",
-    "Delivered €15M+ in cost savings through network optimization, automation, and execution control",
+    "Managed end-to-end linehaul operations across EU & NA middle mile transportation network, driving cost, speed, and reliability",
+    "Delivered €15M+ in cost savings through network optimization, automation, and operations excellence initiatives",
     "Reduced manual intervention by 90% through automation across reporting and planning workflows",
-    "Established execution guardrails and structured review cadences to improve decision quality across planning and operations",
+    "Leveraged Generative AI to accelerate operational analysis, surface network insights, and inform workflow design",
   ];
 
   const iEnergizerImpact = [
@@ -20,10 +20,10 @@ const Experience = () => {
   ];
 
   const iEnergizerBullets = [
-    "Managed end-to-end service delivery across customer support, fraud risk, and credit protection operations",
+    "Managed end-to-end service delivery for customer support, fraud risk, and credit protection programs, ensuring SLA adherence",
     "Launched and scaled fraud and credit protection operations, achieving 99%+ quality and 95% CSAT",
-    "Designed SOPs, dashboards, and reporting frameworks to standardize operations across teams",
-    "Owned workforce planning, training, and performance management — scaling frontline leadership capability",
+    "Led high-risk fraud investigations and escalation workflows, ensuring compliance with internal policies and risk controls",
+    "Led workforce planning (300+ to 1,500+ employees), training, and performance management to improve productivity",
   ];
 
   const iEnergizerProgression = [
@@ -66,7 +66,7 @@ const Experience = () => {
             </div>
 
             <p className="text-xs text-gray-400 mb-6 ml-14">
-              Transportation Network · Cost Optimization · Execution Systems
+              Transportation Network · Cost Optimization · Automation · Generative AI
             </p>
 
             <div className="flex flex-wrap gap-3 mb-6">

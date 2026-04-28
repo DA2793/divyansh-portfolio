@@ -16,12 +16,12 @@ const mockData = {
       company: "Amazon",
       period: "Sep 2021 - Current",
       achievements: [
-        "Developed and implemented Java-based Amazon ROC HawkEye Tampermonkey script to automate case management across platforms, reducing manual efforts by 90% and achieving significant time savings.",
-        "Created a Macros-based Excel report for utilization monitoring, reducing report generation time by 80%.",
-        "Spearheaded AI-driven scheduling optimization projects, reducing transit time and ensuring SLA adherence.",
-        "Managed a primary team of 20+ and a secondary team of 150+, driving operational efficiency through innovative solutions.",
-        "Collaborated with cross-functional teams across Europe and North America to implement cost-reduction initiatives, leading to measurable savings.",
-        "Delivered strategic reports using SQL and data visualization tools, providing actionable insights for stakeholders."
+        "Managed end-to-end linehaul operations across North America and European Middle Mile transportation network, ensuring reliable movement of freight between fulfillment centers, sort centers, and delivery stations.",
+        "Led cross-functional operational programs delivering €15M+ in cost savings through transportation network optimization, automation, and operations excellence initiatives.",
+        "Implemented automation solutions across reporting and planning workflows, reducing manual effort by 90% and improving real-time network visibility and decision speed.",
+        "Leveraged Generative AI to accelerate operational analysis, surface network insights, and inform workflow design across large-scale logistics operations.",
+        "Led multi-layered operations teams (20+ direct / 150+ extended) responsible for network monitoring, escalation management, and transportation performance governance.",
+        "Delivered data-driven insights via SQL, Excel, and analytics dashboards to support transportation planning, cost optimization, and distribution operations decisions."
       ]
     },
     {
@@ -29,31 +29,34 @@ const mockData = {
       company: "IEnergizer",
       period: "Sep 2015 - Sep 2021",
       achievements: [
-        "Led the successful launch of multiple projects including High-Risk Fraud and Credit Protection, achieving 99% quality and 100% customer satisfaction.",
-        "Managed high-severity escalation cases and collaborated with stakeholders for effective resolution.",
-        "Developed training programs for new hires and established SOPs to ensure consistent performance.",
-        "Coordinated with BI and MIS teams to produce detailed reports for management and stakeholders."
+        "Managed end-to-end service delivery for customer support, fraud risk, and credit protection programs, ensuring SLA adherence and operations excellence.",
+        "Led high-risk fraud investigations and escalation workflows, ensuring compliance with internal policies and risk controls.",
+        "Launched and scaled fraud and credit protection operations, achieving 99%+ quality and 95% CSAT.",
+        "Led workforce planning (300+ to 1,500+ employees), training, and performance management to improve productivity and team capability."
       ]
     }
   ],
   skills: {
     "Product & Operations": [
-      "Product Management",
-      "Project Management",
-      "Operations Management",
-      "Process Improvement"
+      "Supply Chain Management",
+      "Network Optimization",
+      "Transportation Planning",
+      "Operations Excellence",
+      "Program Management"
     ],
     "Technical": [
-      "AI-Driven Process Optimization",
-      "Automation (Tampermonkey, Macros)",
-      "Data Analysis & Reporting",
-      "QuickSight, Excel, SQL"
+      "SQL, Python, Advanced Excel",
+      "Generative AI & AI-Driven Optimization",
+      "Amazon QuickSight & Data Analytics",
+      "Workflow Automation Tools",
+      "Browser-Based Validation Systems"
     ],
     "Management": [
-      "Supply Chain Operations",
+      "Performance Governance",
       "Stakeholder Management",
-      "Change Management",
-      "Cross-Functional Collaboration"
+      "Capacity Planning",
+      "Cross-Functional Collaboration",
+      "Process Improvement"
     ]
   },
   education: [

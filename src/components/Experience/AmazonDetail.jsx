@@ -40,10 +40,10 @@ const AmazonDetail = () => {
           {/* Hero metrics */}
           <div className="flex flex-wrap gap-8">
             {[
-              { value: "€11M+", label: "Cost Savings (Automation)" },
+              { value: "$11M+", label: "Cost Savings (Automation)" },
               { value: "€1.8M", label: "Network Optimization" },
               { value: "90%+", label: "Manual Effort Reduced" },
-              { value: "600+", label: "Deep-Dive Analyses Led" },
+              { value: "Gen AI", label: "Driven Efficiency Programs" },
             ].map(({ value, label }) => (
               <div key={label}>
                 <p className="text-2xl font-bold text-yellow-400">{value}</p>
@@ -312,8 +312,9 @@ const AmazonDetail = () => {
           </h2>
           <div className="space-y-5 text-[#334155] leading-relaxed">
             <p>
-              By 2025, my focus shifted toward building automation layers and
-              scalable operational infrastructure.
+              By 2025, my focus shifted toward building automation layers,
+              leveraging Generative AI, and creating scalable operational
+              infrastructure.
             </p>
             <p>
               The first major initiative was automating commercial carrier
@@ -414,6 +415,12 @@ const AmazonDetail = () => {
               extraction — particularly for long-horizon analyses spanning 6+
               months — ensuring decisions were backed by complete and accurate
               datasets.
+            </p>
+            <p>
+              I also leveraged Generative AI to accelerate root cause analysis,
+              optimization modelling, and automation design — using it to
+              surface network insights, inform workflow design, and enhance
+              decision support across EU and NA middle-mile operations.
             </p>
             <p>
               A key focus area was delivery estimate accuracy, directly tied to

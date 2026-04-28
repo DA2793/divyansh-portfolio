@@ -27,12 +27,12 @@ const Hero = () => {
           <p className="text-gray-200 text-base md:text-lg leading-relaxed mb-6 max-w-xl font-medium tracking-wide">
             OPERATIONS & SUPPLY CHAIN LEADER <br />
             <span className="text-gray-400">
-              GLOBAL LOGISTICS PROGRAMS | NETWORK OPTIMIZATION | PROCESS TRANSFORMATION
+              NETWORK OPTIMIZATION | AUTOMATION & SYSTEMS DESIGN | GENERATIVE AI
             </span>
           </p>
 
           <p className="text-gray-400 mb-8 max-w-xl">
-            Delivered €15M+ cost savings through strategic initiatives across supply chain and financial services operations.
+            Manager of the Year – Amazon 2025. Delivered €15M+ cost savings through strategic initiatives across supply chain and financial services operations.
           </p>
 
           {/* Metrics */}

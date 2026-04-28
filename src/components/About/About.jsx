@@ -1,14 +1,15 @@
 const About = () => {
   const competencies = [
-    "Global Logistics & Transportation Operations",
-    "Supply Chain & Network Optimization",
-    "Program & Stakeholder Leadership",
+    "Supply Chain Management & Logistics Operations",
+    "Network Optimization & Transportation Planning",
+    "Program Management & Stakeholder Leadership",
     "Operational Governance (WBR / MBR / QBR)",
-    "Demand Forecasting & Capacity Planning",
+    "Capacity Planning & Distribution Operations",
   ];
 
   const tools = [
-    "SQL, Advanced Excel, QuickSight",
+    "SQL, Python, Advanced Excel, QuickSight",
+    "Generative AI & AI-Driven Optimization",
     "Workflow Automation & Process Optimization",
     "Data Analytics & Reporting",
     "Dashboarding & Decision Support Systems",
@@ -50,8 +51,9 @@ const About = () => {
               owning cross-continental transportation performance across Europe
               and North America. The work spans network performance, cost
               optimization, and building execution frameworks that hold up at
-              scale — from scheduling automation to large-scale cost
-              optimization and disruption reduction programs.
+              scale — from scheduling automation and Generative AI-driven
+              analysis to large-scale cost optimization and disruption
+              reduction programs.
             </p>
             <p className="text-[#334155] leading-relaxed text-base">
               Prior to Amazon, I led customer operations in the BFSI domain

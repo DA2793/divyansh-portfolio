@@ -10,6 +10,66 @@ const Achievements = () => {
           Achievements & Recognition
         </h2>
 
+        {/* ── Tier 0: Manager of the Year ── */}
+        <div
+          className="rounded-2xl p-8 mb-6 border-2 border-yellow-400/30 shadow-md hover:shadow-lg transition-shadow duration-200 relative overflow-hidden"
+          style={{
+            background: "linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fde68a20 100%)",
+          }}
+        >
+          <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 rounded-full blur-2xl -translate-y-8 translate-x-8" />
+          <div className="relative">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-[#FF9900]/15 text-[#b36a00]">
+                Amazon
+              </span>
+              <span className="text-xs text-gray-500 font-medium">
+                2025
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3 mb-1">
+              <div className="w-10 h-10 rounded-lg bg-[#0f172a] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path
+                    d="M9 1l2 4 4.5.7-3.25 3.15.75 4.45L9 11l-4 2.3.75-4.45L2.5 5.7 7 5l2-4z"
+                    fill="#FBBF24"
+                    stroke="#F59E0B"
+                    strokeWidth="0.8"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-[#0f172a]">
+                  Manager of the Year
+                </h3>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  Operational Excellence, Automation & Gen AI-Driven Efficiency
+                </p>
+              </div>
+            </div>
+
+            <ul className="space-y-2.5 mt-5">
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Recognized for delivering significant cost savings and headcount
+                optimization across the network during 2025
+              </li>
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Drove operational process improvements, automation initiatives,
+                and Gen AI-driven efficiency programs
+              </li>
+              <li className="flex items-start gap-3 text-sm text-[#475569] leading-relaxed">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FF9900] shrink-0" />
+                Delivered measurable impact through scalable systems and
+                cross-functional program leadership
+              </li>
+            </ul>
+          </div>
+        </div>
+
         {/* ── Tier 1: Manager of the Quarter ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* Q1 2025 */}
