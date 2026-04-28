@@ -3,8 +3,8 @@ const About = () => {
     "Supply Chain Management & Logistics Operations",
     "Network Optimization & Transportation Planning",
     "Program Management & Stakeholder Leadership",
-    "Operational Governance (WBR / MBR / QBR)",
-    "Capacity Planning & Distribution Operations",
+    "Operational Governance & Performance Management",
+    "Service Delivery & Customer Operations (BFSI)",
   ];
 
   const tools = [
