@@ -1,3 +1,5 @@
+import AnimateOnScroll from "../AnimateOnScroll/AnimateOnScroll";
+
 const Education = () => {
   return (
     <section id="education" className="py-24 bg-[#f7f6f2] text-[#0f172a]">
@@ -11,6 +13,7 @@ const Education = () => {
         </h2>
 
         {/* Two-column layout — card left, context right */}
+        <AnimateOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
           {/* Education card */}
           <div className="md:col-span-3 bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
@@ -54,6 +57,7 @@ const Education = () => {
             </div>
           </div>
         </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import AnimateOnScroll from "../AnimateOnScroll/AnimateOnScroll";
+
 const Skills = () => {
   const categories = [
     {
@@ -68,10 +70,10 @@ const Skills = () => {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {categories.map(({ title, tagline, icon, highlight, items }) => (
+          {categories.map(({ title, tagline, icon, highlight, items }, index) => (
+            <AnimateOnScroll key={title} delay={index * 0.1}>
             <div
-              key={title}
-              className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full"
             >
               {/* Header */}
               <div className="flex items-center gap-3 mb-3">
@@ -107,6 +109,7 @@ const Skills = () => {
                 ))}
               </ul>
             </div>
+            </AnimateOnScroll>
           ))}
         </div>
       </div>

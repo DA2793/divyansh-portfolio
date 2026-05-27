@@ -1,3 +1,5 @@
+import AnimateOnScroll from "../AnimateOnScroll/AnimateOnScroll";
+
 const About = () => {
   const competencies = [
     "Supply Chain Management & Logistics Operations",
@@ -37,6 +39,7 @@ const About = () => {
         </h2>
 
         {/* Bio + What Drives Me */}
+        <AnimateOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16 items-start">
           {/* Bio */}
           <div className="md:col-span-3 space-y-5">
@@ -91,10 +94,13 @@ const About = () => {
           </div>
         </div>
 
+        </AnimateOnScroll>
+
         {/* Divider */}
         <div className="border-t border-gray-200 mb-16" />
 
         {/* Competency cards */}
+        <AnimateOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Core Competencies */}
           <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
@@ -143,6 +149,7 @@ const About = () => {
             </ul>
           </div>
         </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

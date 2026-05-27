@@ -55,11 +55,11 @@ const Hero = () => {
 
           {/* Social */}
           <div className="flex gap-5">
-            <a href="https://linkedin.com/in/divyanshahuja" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com/in/divyanshahuja" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
               <i className="fab fa-linkedin text-xl hover:text-yellow-400 transition"></i>
             </a>
 
-            <a href="mailto:da.2793@yahoo.com">
+            <a href="mailto:da.2793@yahoo.com" aria-label="Send email">
               <i className="fas fa-envelope text-xl hover:text-yellow-400 transition"></i>
             </a>
           </div>

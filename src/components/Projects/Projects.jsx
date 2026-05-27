@@ -1,3 +1,5 @@
+import AnimateOnScroll from "../AnimateOnScroll/AnimateOnScroll";
+
 const Projects = () => {
   const featured = {
     title: "European Transportation Network Optimization",
@@ -68,6 +70,7 @@ const Projects = () => {
         </h2>
 
         {/* Featured card — full width */}
+        <AnimateOnScroll>
         <div
           className="rounded-2xl p-8 mb-6 border border-white/10 hover:border-white/20 transition-all duration-300"
           style={{
@@ -100,15 +103,16 @@ const Projects = () => {
             </p>
           </div>
         </div>
+        </AnimateOnScroll>
 
         {/* Project grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map(({ title, company, type, description, impact }) => {
+          {projects.map(({ title, company, type, description, impact }, index) => {
             const accent = companyAccent[company];
             return (
+              <AnimateOnScroll key={title} delay={index * 0.1}>
               <div
-                key={title}
-                className="rounded-2xl p-7 border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col"
+                className="rounded-2xl p-7 border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col h-full"
                 style={{
                   background:
                     "linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02))",
@@ -139,6 +143,7 @@ const Projects = () => {
                   </p>
                 </div>
               </div>
+              </AnimateOnScroll>
             );
           })}
         </div>

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -10,38 +10,49 @@ import Projects from './components/Projects/Projects';
 import Achievements from './components/Achievements/Achievements';
 import Certifications from './components/Certifications/Certifications';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound';
 import IEnergizerDetail from './components/Experience/IEnergizerDetail';
 import AmazonDetail from './components/Experience/AmazonDetail';
 
-function App() {
-  const [isLoading, setIsLoading] = useState(true);
+// Scroll to hash on route change (fixes Back to Home → #section)
+function ScrollToHash() {
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 800);
-    return () => clearTimeout(timer);
-  }, []);
+    if (hash) {
+      const id = hash.replace('#', '');
+      // Small delay to let the DOM render
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[#0b1b2b]">
-        <div className="text-center animate-pulse">
-          <p className="text-3xl font-bold text-white tracking-wider">DA</p>
-          <div className="w-12 h-px bg-yellow-400 mx-auto mt-3"></div>
-        </div>
-      </div>
-    );
-  }
+  return null;
+}
 
+function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
+      <ScrollToHash />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-yellow-400 focus:text-[#0f172a] focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold"
+      >
+        Skip to main content
+      </a>
       <Navbar />
 
       <Routes>
         <Route path="/" element={
           <>
-            <main>
+            <main id="main-content">
               <Hero />
               <About />
               <Experience />
@@ -62,28 +73,13 @@ function App() {
               <Certifications />
               <Contact />
             </main>
-
-            <footer className="bg-[#0f172a] border-t border-white/10">
-              <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p className="text-gray-400 text-sm">
-                  © {new Date().getFullYear()} Divyansh Ahuja. All rights reserved.
-                </p>
-                <div className="flex items-center gap-5">
-                  <a href="https://linkedin.com/in/divyanshahuja" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition text-lg">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-
-                  <a href="mailto:da.2793@yahoo.com" className="text-gray-400 hover:text-white transition text-lg">
-                    <i className="fas fa-envelope"></i>
-                  </a>
-                </div>
-              </div>
-            </footer>
+            <Footer />
           </>
         } />
 
         <Route path="/ienergizer" element={<IEnergizerDetail />} />
         <Route path="/amazon" element={<AmazonDetail />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

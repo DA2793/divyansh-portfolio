@@ -1,3 +1,5 @@
+import AnimateOnScroll from "../AnimateOnScroll/AnimateOnScroll";
+
 const Contact = () => {
   const contacts = [
     {
@@ -50,6 +52,7 @@ const Contact = () => {
         </p>
 
         {/* ── Contact cards ── */}
+        <AnimateOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {contacts.map(({ icon, label, value, href, primary }) => (
             <div
@@ -93,8 +96,10 @@ const Contact = () => {
             </div>
           ))}
         </div>
+        </AnimateOnScroll>
 
         {/* ── Profile cards ── */}
+        <AnimateOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {profiles.map(({ icon, label, sub, href }) => (
             <a
@@ -115,6 +120,7 @@ const Contact = () => {
             </a>
           ))}
         </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

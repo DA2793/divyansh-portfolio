@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AnimateOnScroll from "../AnimateOnScroll/AnimateOnScroll";
 
 const Experience = () => {
   const amazonImpact = [
@@ -46,6 +47,7 @@ const Experience = () => {
         <div className="space-y-8">
 
           {/* ─── AMAZON ─── */}
+          <AnimateOnScroll>
           <div
             className="rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300"
             style={{
@@ -54,7 +56,7 @@ const Experience = () => {
           >
             <div className="flex items-start justify-between gap-4 mb-2">
               <div className="flex items-center gap-4">
-                <img src="/amazon.png" alt="Amazon" className="w-10 h-10 object-contain rounded-lg" />
+                <img src="/amazon.png" alt="Amazon" className="w-10 h-10 object-contain rounded-lg" loading="lazy" />
                 <div>
                   <h3 className="text-lg font-bold text-white">Amazon</h3>
                   <p className="text-sm text-gray-300">Supply Chain Operations Manager</p>
@@ -93,8 +95,10 @@ const Experience = () => {
               </Link>
             </div>
           </div>
+          </AnimateOnScroll>
 
           {/* ─── IENERGIZER ─── */}
+          <AnimateOnScroll>
           <div
             className="rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300"
             style={{
@@ -103,7 +107,7 @@ const Experience = () => {
           >
             <div className="flex items-start justify-between gap-4 mb-2">
               <div className="flex items-center gap-4">
-                <img src="/ienergizer.png" alt="iEnergizer" className="w-10 h-10 object-contain rounded-lg" />
+                <img src="/ienergizer.png" alt="iEnergizer" className="w-10 h-10 object-contain rounded-lg" loading="lazy" />
                 <div>
                   <h3 className="text-lg font-bold text-white">iEnergizer</h3>
                   <p className="text-sm text-gray-300">Credit One Bank – US Credit Card Issuer</p>
@@ -160,6 +164,7 @@ const Experience = () => {
               </Link>
             </div>
           </div>
+          </AnimateOnScroll>
         </div>
       </div>
     </section>

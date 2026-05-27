@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import Footer from "../Footer/Footer";
 
 const AmazonDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Divyansh Ahuja – Amazon Experience";
+    return () => { document.title = "Divyansh Ahuja – Operations & Supply Chain Leader"; };
   }, []);
 
   return (
@@ -502,22 +505,7 @@ const AmazonDetail = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#0f172a] border-t border-white/10">
-        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Divyansh Ahuja. All rights reserved.
-          </p>
-          <div className="flex items-center gap-5">
-            <a href="https://linkedin.com/in/divyanshahuja" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition text-lg">
-              <i className="fab fa-linkedin"></i>
-            </a>
-
-            <a href="mailto:da.2793@yahoo.com" className="text-gray-400 hover:text-white transition text-lg">
-              <i className="fas fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
