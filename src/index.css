@@ -10,10 +10,4 @@
     outline-offset: 2px;
     border-radius: 4px;
   }
-
-  /* Safari-safe min-height for full-screen sections */
-  .min-h-screen {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
 }
