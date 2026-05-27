@@ -6,7 +6,7 @@ const IEnergizerDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Divyansh Ahuja – iEnergizer Experience";
-    return () => { document.title = "Divyansh Ahuja – Operations & Supply Chain Leader"; };
+    return () => { document.title = "Divyansh Ahuja – Supply Chain & Operations Manager"; };
   }, []);
 
   return (

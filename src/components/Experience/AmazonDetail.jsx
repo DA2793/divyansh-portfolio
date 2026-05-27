@@ -6,7 +6,7 @@ const AmazonDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Divyansh Ahuja – Amazon Experience";
-    return () => { document.title = "Divyansh Ahuja – Operations & Supply Chain Leader"; };
+    return () => { document.title = "Divyansh Ahuja – Supply Chain & Operations Manager"; };
   }, []);
 
   return (

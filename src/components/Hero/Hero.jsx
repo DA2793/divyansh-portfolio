@@ -13,43 +13,45 @@ const Hero = () => {
         {/* ================= LEFT ================= */}
         <div className="flex flex-col justify-center">
 
-          <div className="flex items-center gap-5 mb-6">
+          <div className="flex items-center gap-4 md:gap-5 mb-6">
             <img
               src="/profile-pic.jpg"
               alt="Divyansh Ahuja"
-              className="w-20 h-20 rounded-full object-cover shadow-xl border border-white/10"
+              className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shadow-xl border border-white/10 flex-shrink-0"
             />
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
+            <h1 className="text-3xl md:text-5xl font-bold text-white">
               Divyansh Ahuja
             </h1>
           </div>
 
-          <p className="text-gray-200 text-base md:text-lg leading-relaxed mb-6 max-w-xl font-medium tracking-wide">
-            OPERATIONS & SUPPLY CHAIN LEADER <br />
-            <span className="text-gray-400">
-              NETWORK OPTIMIZATION | AUTOMATION & SYSTEMS DESIGN | GENERATIVE AI
-            </span>
+          <p className="text-gray-200 text-sm md:text-base leading-relaxed mb-6 max-w-xl">
+            <span className="font-semibold text-white">Supply Chain & Operations Manager</span>
+            <span className="text-gray-400"> | </span>
+            <span className="text-yellow-400 font-semibold">€15M+ Impact</span>
+            <span className="text-gray-400"> · Amazon EU & NA</span>
+            <br className="hidden sm:block" />
+            <span className="text-gray-400">Fraud Risk & BFSI Ops | Network Optimization · Automation</span>
           </p>
 
-          <p className="text-gray-400 mb-8 max-w-xl">
+          <p className="text-gray-400 mb-8 max-w-xl text-sm md:text-base">
             Manager of the Year – Amazon 2025. Delivered €15M+ cost savings through strategic initiatives across supply chain and financial services operations.
           </p>
 
           {/* Metrics */}
-          <div className="flex gap-10 flex-wrap mb-8">
+          <div className="flex gap-6 md:gap-10 flex-wrap mb-8">
             <div>
-              <p className="text-xl font-bold text-white">€15M+</p>
-              <p className="text-gray-400 text-sm">Cost Savings Delivered</p>
+              <p className="text-lg md:text-xl font-bold text-white">€15M+</p>
+              <p className="text-gray-400 text-xs md:text-sm">Cost Savings Delivered</p>
             </div>
 
             <div>
-              <p className="text-xl font-bold text-white">95%+</p>
-              <p className="text-gray-400 text-sm">CSAT in BFSI Operations</p>
+              <p className="text-lg md:text-xl font-bold text-white">95%+</p>
+              <p className="text-gray-400 text-xs md:text-sm">CSAT in BFSI Operations</p>
             </div>
 
             <div>
-              <p className="text-xl font-bold text-white">Supply Chain & BFSI</p>
-              <p className="text-gray-400 text-sm">Operations Leadership</p>
+              <p className="text-lg md:text-xl font-bold text-white">Supply Chain & BFSI</p>
+              <p className="text-gray-400 text-xs md:text-sm">Operations Leadership</p>
             </div>
           </div>
 
@@ -69,7 +71,7 @@ const Hero = () => {
         <div className="flex items-center">
 
           <div
-            className="w-full rounded-2xl p-8 relative"
+            className="w-full rounded-2xl p-5 md:p-8 relative"
             style={{
               background: "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
               backdropFilter: "blur(16px)",
@@ -81,7 +83,7 @@ const Hero = () => {
             {/* TOP SHINE (fixes empty feel) */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-            <div className="relative pl-6 border-l border-white/10 space-y-10">
+            <div className="relative pl-5 md:pl-6 border-l border-white/10 space-y-7 md:space-y-10">
 
               {/* AMAZON */}
               <motion.div whileHover={{ x: 6 }}>
