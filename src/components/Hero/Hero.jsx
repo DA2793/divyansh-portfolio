@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const Hero = () => {
   return (
     <section className="min-h-screen w-full bg-[#071a2f] text-white flex items-center px-6 md:px-16 pt-16 relative overflow-hidden">
@@ -79,15 +77,15 @@ const Hero = () => {
             }}
           >
 
-            {/* TOP SHINE (fixes empty feel) */}
+            {/* TOP SHINE */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
             <div className="relative pl-5 md:pl-6 border-l border-white/10 space-y-7 md:space-y-10">
 
               {/* AMAZON */}
-              <motion.div whileHover={{ x: 6 }}>
+              <div className="hover:translate-x-1 transition-transform duration-200">
                 <div className="flex items-start gap-4">
-                  <img src="/amazon.png" className="w-10 h-10 object-contain mt-1" />
+                  <img src="/amazon.png" alt="Amazon" className="w-10 h-10 object-contain mt-1" />
                   <div>
                     <p className="font-semibold text-lg text-white">Amazon</p>
                     <p className="text-sm text-gray-300">Supply Chain Operations Manager</p>
@@ -103,12 +101,12 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* IENERGIZER AOM */}
-              <motion.div whileHover={{ x: 6 }}>
+              <div className="hover:translate-x-1 transition-transform duration-200">
                 <div className="flex items-start gap-4">
-                  <img src="/ienergizer.png" className="w-10 h-10 object-contain mt-1" />
+                  <img src="/ienergizer.png" alt="iEnergizer" className="w-10 h-10 object-contain mt-1" />
                   <div>
                     <p className="font-semibold text-lg text-white">iEnergizer</p>
                     <p className="text-sm text-gray-300">Assistant Operations Manager</p>
@@ -124,29 +122,29 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* TEAM LEAD */}
-              <motion.div whileHover={{ x: 6 }}>
+              <div className="hover:translate-x-1 transition-transform duration-200">
                 <div className="flex items-start gap-4 opacity-90">
-                  <img src="/ienergizer.png" className="w-9 h-9 object-contain mt-1" />
+                  <img src="/ienergizer.png" alt="iEnergizer" className="w-9 h-9 object-contain mt-1" />
                   <div>
                     <p className="text-sm text-white">Operations Team Lead</p>
                     <p className="text-xs text-gray-500">2017 — 2019</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* SR EXEC */}
-              <motion.div whileHover={{ x: 6 }}>
+              <div className="hover:translate-x-1 transition-transform duration-200">
                 <div className="flex items-start gap-4 opacity-80">
-                  <img src="/ienergizer.png" className="w-9 h-9 object-contain mt-1" />
+                  <img src="/ienergizer.png" alt="iEnergizer" className="w-9 h-9 object-contain mt-1" />
                   <div>
                     <p className="text-sm text-white">Senior Customer Service Executive</p>
                     <p className="text-xs text-gray-500">2015 — 2017</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
             </div>
           </div>
