@@ -74,6 +74,7 @@ const Hero = () => {
             className="w-full rounded-2xl p-5 md:p-8 relative"
             style={{
               background: "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
+              WebkitBackdropFilter: "blur(16px)",
               backdropFilter: "blur(16px)",
               border: "1px solid rgba(255,255,255,0.08)",
               boxShadow: "0 8px 32px rgba(0,0,0,0.35)",

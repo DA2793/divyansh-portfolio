@@ -39,10 +39,18 @@ const Navbar = () => {
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
     } else {
       document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
     }
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    };
   }, [mobileOpen]);
 
   const navLinks = [
@@ -59,78 +67,77 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-      ${scrolled
-        ? "bg-[#0b1b2b]/95 backdrop-blur-xl border-b border-white/10 shadow-lg"
-        : "bg-[#0b1b2b]/85 backdrop-blur-lg"
-      }`}
-      role="navigation"
-      aria-label="Main navigation"
-    >
-      <div className="absolute inset-0 -z-10 bg-[#0b1b2b]" />
-
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex justify-between items-center h-16">
-          <a href={isHome ? "#" : "/"} className="text-lg font-semibold text-white tracking-wide">
-            Divyansh Ahuja
-          </a>
-
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center space-x-8 text-sm">
-            {navLinks.map(({ id, label }) => (
-              <a
-                key={id}
-                href={isHome ? `#${id}` : `/#${id}`}
-                className={`transition focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1b2b] rounded px-1 ${
-                  activeSection === id
-                    ? "text-yellow-400"
-                    : "text-gray-200 hover:text-yellow-400"
-                }`}
-              >
-                {label}
-              </a>
-            ))}
-          </div>
-
-          {/* Mobile hamburger button */}
-          <button
-            className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            aria-expanded={mobileOpen}
-          >
-            <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[3px]" : ""}`} />
-            <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 mt-1 ${mobileOpen ? "opacity-0" : ""}`} />
-            <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 mt-1 ${mobileOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile menu overlay */}
-      <div
-        className={`md:hidden fixed inset-0 top-16 bg-[#0b1b2b]/98 backdrop-blur-xl transition-all duration-300 ${
-          mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+    <>
+      <nav
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
+        ${scrolled
+          ? "bg-[#0b1b2b] border-b border-white/10 shadow-lg"
+          : "bg-[#0b1b2b]"
         }`}
+        role="navigation"
+        aria-label="Main navigation"
       >
-        <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex justify-between items-center h-16">
+            <a href={isHome ? "#" : "/"} className="text-lg font-semibold text-white tracking-wide">
+              Divyansh Ahuja
+            </a>
+
+            {/* Desktop nav */}
+            <div className="hidden md:flex items-center space-x-8 text-sm">
+              {navLinks.map(({ id, label }) => (
+                <a
+                  key={id}
+                  href={isHome ? `#${id}` : `/#${id}`}
+                  className={`transition focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1b2b] rounded px-1 ${
+                    activeSection === id
+                      ? "text-yellow-400"
+                      : "text-gray-200 hover:text-yellow-400"
+                  }`}
+                >
+                  {label}
+                </a>
+              ))}
+            </div>
+
+            {/* Mobile hamburger button */}
+            <button
+              className="md:hidden relative z-[60] flex flex-col justify-center items-center w-10 h-10 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+            >
+              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[3px]" : ""}`} />
+              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 mt-1 ${mobileOpen ? "opacity-0" : ""}`} />
+              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 mt-1 ${mobileOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile menu - full screen overlay */}
+      {mobileOpen && (
+        <div
+          className="md:hidden fixed inset-0 z-[55] bg-[#0b1b2b] flex flex-col items-center justify-center gap-8"
+          style={{ paddingTop: "64px" }}
+        >
           {navLinks.map(({ id, label }) => (
             <a
               key={id}
               href={isHome ? `#${id}` : `/#${id}`}
               onClick={handleNavClick}
-              className={`text-xl font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 rounded px-3 py-1 ${
+              className={`text-2xl font-medium transition px-3 py-2 ${
                 activeSection === id
                   ? "text-yellow-400"
-                  : "text-gray-200 hover:text-yellow-400"
+                  : "text-gray-200 active:text-yellow-400"
               }`}
             >
               {label}
             </a>
           ))}
         </div>
-      </div>
-    </nav>
+      )}
+    </>
   );
 };
 
