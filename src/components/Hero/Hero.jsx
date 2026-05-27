@@ -5,8 +5,8 @@ const Hero = () => {
     <section className="min-h-screen w-full bg-[#071a2f] text-white flex items-center px-6 md:px-16 pt-16 relative overflow-hidden">
 
       {/* Background Glow */}
-      <div className="absolute top-[-80px] left-[-80px] w-[420px] h-[420px] rounded-full bg-yellow-400/5 blur-[120px]" />
-      <div className="absolute bottom-[-60px] right-[5%] w-[360px] h-[360px] rounded-full bg-blue-500/5 blur-[120px]" />
+      <div className="absolute top-[-80px] left-[-80px] w-[420px] h-[420px] rounded-full bg-yellow-400/5 blur-3xl" />
+      <div className="absolute bottom-[-60px] right-[5%] w-[360px] h-[360px] rounded-full bg-blue-500/5 blur-3xl" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full relative z-10 items-center">
 
@@ -73,9 +73,7 @@ const Hero = () => {
           <div
             className="w-full rounded-2xl p-5 md:p-8 relative"
             style={{
-              background: "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
-              WebkitBackdropFilter: "blur(16px)",
-              backdropFilter: "blur(16px)",
+              background: "linear-gradient(135deg, rgba(15,23,42,0.95), rgba(11,27,43,0.98))",
               border: "1px solid rgba(255,255,255,0.08)",
               boxShadow: "0 8px 32px rgba(0,0,0,0.35)",
             }}
