@@ -58,9 +58,7 @@ const Hero = () => {
             <a href="https://linkedin.com/in/divyanshahuja" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin text-xl hover:text-yellow-400 transition"></i>
             </a>
-            <a href="https://github.com/DA2793" target="_blank" rel="noreferrer">
-              <i className="fab fa-github text-xl hover:text-yellow-400 transition"></i>
-            </a>
+
             <a href="mailto:da.2793@yahoo.com">
               <i className="fas fa-envelope text-xl hover:text-yellow-400 transition"></i>
             </a>

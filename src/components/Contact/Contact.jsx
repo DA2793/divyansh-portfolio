@@ -33,12 +33,6 @@ const Contact = () => {
       sub: "Experience & leadership journey",
       href: "https://linkedin.com/in/divyanshahuja",
     },
-    {
-      icon: <i className="fab fa-github" />,
-      label: "GitHub",
-      sub: "Projects & technical work",
-      href: "https://github.com/DA2793",
-    },
   ];
 
   return (

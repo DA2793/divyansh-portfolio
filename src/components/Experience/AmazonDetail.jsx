@@ -511,9 +511,7 @@ const AmazonDetail = () => {
             <a href="https://linkedin.com/in/divyanshahuja" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition text-lg">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/DA2793" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition text-lg">
-              <i className="fab fa-github"></i>
-            </a>
+
             <a href="mailto:da.2793@yahoo.com" className="text-gray-400 hover:text-white transition text-lg">
               <i className="fas fa-envelope"></i>
             </a>
