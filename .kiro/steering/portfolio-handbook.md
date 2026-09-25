@@ -300,7 +300,7 @@ strips, "← Back to Home" at top and bottom, Footer.
 
 ## 8. Known gaps and loose ends (Sept 2026)
 
-- `public/Divyansh_Ahuja_CV.pdf` (~0.3 MB) is committed but nothing links to
+- `public/Divyansh_Ahuja_CV.pdf` (~140 KB) is committed but nothing links to
   it. Either add a "Download CV" button in Hero/Contact or delete it.
 - `public/vite.svg` is the Vite template leftover; unreferenced.
 - `src/components/LoadingSpinner/` is an empty directory. Git doesn't track
